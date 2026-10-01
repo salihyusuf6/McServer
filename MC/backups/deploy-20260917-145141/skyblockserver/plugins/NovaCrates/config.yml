@@ -1,0 +1,53 @@
+crate-location: world,219,138,1411
+
+rewards:
+  common:
+  - IRON_INGOT:16
+  - COAL:32
+  rare:
+  - GOLD_INGOT:8
+  - DIAMOND:2
+  epic:
+  - DIAMOND:5
+  - EMERALD:10
+crate-locations:
+  
+  vote: world,256,138,1408
+  tarım: world,256,138,1414
+  novacraft: world,256,139,1411
+crates:
+  vote:
+    key-name: '&avote'
+    hologram:
+    - '&avote Kasası'
+    - '&7Açmak için sağ tıkla!'
+    rewards:
+    - ITEM:DIAMOND:1:40
+    - MONEY:500:50
+    - ITEM:GOLD_INGOT:64:10
+  novacraft:
+    display: '&anovacraft Kasası'
+    key-name: '&anovacraft Anahtarı'
+    hologram:
+    - '&anovacraft Kasası'
+    - '&7Açmak için sağ tıkla!'
+    rewards:
+    - ITEM:DIAMOND:1:40
+    - MONEY:500:50
+    - ITEM:GOLD_INGOT:64:10
+  tarım:
+    display: '&atarım Kasası'
+    key-name: '&atarım Anahtarı'
+    hologram:
+    - '&atarım Kasası'
+    - '&7Açmak için sağ tıkla!'
+    rewards:
+    - ITEM:DIAMOND:16:40
+    - MONEY:50000:50
+    - MONEY:100000:40
+    - ITEM:GRASS_BLOCK:32:40
+    - ITEM:NETHERITE_INGOT:3:30
+    - ITEM:EMERALD:8:30
+    - ITEM:PISTON:64:30
+ 
+

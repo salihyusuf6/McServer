@@ -1,0 +1,44 @@
+[16:50:36] [Server thread/INFO]: [NovaProbe] PASS: Generated dungeon world ready
+[16:50:36] [Server thread/INFO]: [NovaProbe] PASS: Five playable tiers configured
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Hub is outside combat regions
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Safe entry tier 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: WorldGuard tier boundary 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Mob spawn/cap tier 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Correct species tier 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing health tier 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing attack damage tier 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Death reward progression for species tier 1
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Safe entry tier 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: WorldGuard tier boundary 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Mob spawn/cap tier 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Correct species tier 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing health tier 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing attack damage tier 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Death reward progression for species tier 2
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Safe entry tier 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: WorldGuard tier boundary 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Mob spawn/cap tier 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Correct species tier 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing health tier 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing attack damage tier 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Death reward progression for species tier 3
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Safe entry tier 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: WorldGuard tier boundary 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Mob spawn/cap tier 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Correct species tier 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing health tier 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing attack damage tier 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Death reward progression for species tier 4
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Safe entry tier 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: WorldGuard tier boundary 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Mob spawn/cap tier 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Correct species tier 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing health tier 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Increasing attack damage tier 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Death reward progression for species tier 5
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Locked zone cannot be entered on foot
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Locked zone cannot be bypassed by teleport
+[16:50:37] [Server thread/INFO]: [NovaProbe] PASS: Void recovery returns to sanctuary
+PASS: Restart loads existing map without rebuilding.
+PASS: Five species credit 15 total dust.
+PASS: Real-client five-zone menu and sanctuary entry.

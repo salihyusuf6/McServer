@@ -1,0 +1,114 @@
+2026-03-28 19:40:32 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.serializeAndStore(MVStore.java:1605)
+	at org.h2.mvstore.MVStore.lambda$storeNow$4(MVStore.java:1518)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 12 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	... 7 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.h2.mvstore.Chunk.asString(Chunk.java:314)
+	at org.h2.mvstore.Chunk.writeChunkHeader(Chunk.java:251)
+	at org.h2.mvstore.MVStore.serializeToBuffer(MVStore.java:1658)
+	at org.h2.mvstore.MVStore.serializeAndStore(MVStore.java:1598)
+	at org.h2.mvstore.MVStore.lambda$storeNow$4(MVStore.java:1518)
+	at org.h2.mvstore.MVStore$$Lambda/0x0000007008714788.run(Unknown Source)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.runWith(Thread.java:1596)
+	... 1 more
+2026-03-28 19:41:01 database: could not close the database
+org.h2.message.DbException: General error: "General error: ""org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]"" [50000-214]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.engine.Database.close(Database.java:1153)
+	at org.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at org.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "General error: ""org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]"" [50000-214]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 4 more
+Caused by: org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.serializeAndStore(MVStore.java:1605)
+	at org.h2.mvstore.MVStore.lambda$storeNow$4(MVStore.java:1518)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 12 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.OutOfMemoryError: Java heap space [2.1.214/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	... 7 more
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.h2.mvstore.Chunk.asString(Chunk.java:314)
+	at org.h2.mvstore.Chunk.writeChunkHeader(Chunk.java:251)
+	at org.h2.mvstore.MVStore.serializeToBuffer(MVStore.java:1658)
+	at org.h2.mvstore.MVStore.serializeAndStore(MVStore.java:1598)
+	at org.h2.mvstore.MVStore.lambda$storeNow$4(MVStore.java:1518)
+	at org.h2.mvstore.MVStore$$Lambda/0x0000007008714788.run(Unknown Source)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.runWith(Thread.java:1596)
+	... 1 more
+2026-03-30 15:58:51 database: flush
+org.h2.message.DbException: GeneralError
+	at org.h2.message.DbException.convert(DbException.java:400)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.serializeAndStore(MVStore.java:1605)
+	at org.h2.mvstore.MVStore.lambda$storeNow$4(MVStore.java:1518)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.NoClassDefFoundError: org/h2/api/ErrorCode
+		at org.h2.message.DbException.getJdbcSQLException(DbException.java:475)
+		at org.h2.message.DbException.get(DbException.java:212)
+		at org.h2.message.DbException.convert(DbException.java:395)
+		... 10 more
+	Caused by: java.lang.ClassNotFoundException: org.h2.api.ErrorCode
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+		... 13 more
+Caused by: java.sql.SQLException: GeneralError
+	... 11 more
+Caused by: org.h2.mvstore.MVStoreException: java.lang.NoClassDefFoundError: org/h2/mvstore/WriteBuffer [2.1.214/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	... 7 more
+Caused by: java.lang.NoClassDefFoundError: org/h2/mvstore/WriteBuffer
+	at org.h2.mvstore.MVStore.getWriteBuffer(MVStore.java:1820)
+	at org.h2.mvstore.MVStore.serializeAndStore(MVStore.java:1597)
+	... 6 more
+Caused by: java.lang.ClassNotFoundException: org.h2.mvstore.WriteBuffer
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 8 more

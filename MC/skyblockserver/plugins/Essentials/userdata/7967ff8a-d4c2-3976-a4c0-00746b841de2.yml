@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1775228371371
+  login: 1775228337514
+money: '98095.0'
+last-account-name: OmenTonremmmm
+logoutlocation:
+  world: 30a17745-c581-46f1-8e59-92add4e476cd
+  world-name: world
+  x: 219.91736115414386
+  y: 138.0
+  z: 1413.4343675597825
+  yaw: -174.44993591308594
+  pitch: 29.44998550415039

@@ -1,0 +1,10 @@
+# src/main/resources/config.yml
+minyon-fiyatlari:
+  farmer: 5000.0
+
+minyon-settings:
+  farmer:
+    name: "§6Çiftçi Minyon"
+    toplama-araligi: 5  # saniye
+    baslangic-seviye: 1
+    max-seviye: 10

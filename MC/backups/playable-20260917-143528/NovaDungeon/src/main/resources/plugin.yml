@@ -1,0 +1,12 @@
+name: NovaDungeon
+version: '1.0-SNAPSHOT'
+main: org.nova.novaDungeon.NovaDungeon
+api-version: '1.20'
+author: Nova
+description: Dungeon sistemi
+website: https://info.novasmartschool.com
+depend: [WorldGuard]
+
+commands:
+  dungeonadmin:
+    description: Dungeon admin panel

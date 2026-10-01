@@ -1,0 +1,7 @@
+DefaultSpawnPosition:
+  ==: Vector
+  x: 0.0
+  y: 100.0
+  z: 0.0
+SpawnWorldName: "MainLobby"
+BackendServerURL: "http://127.0.0.1:5001"

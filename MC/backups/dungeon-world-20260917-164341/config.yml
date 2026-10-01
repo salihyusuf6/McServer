@@ -1,0 +1,29 @@
+world: dungeon
+require-island: true
+spawning:
+  global-cap: 36
+  nearby-cap: 5
+rewards:
+  key-chance: 0.04
+# Muhafız her 12 normal/başarılı avdan sonra ortaya çıkar; 6 kat toz + anahtar.
+tiers:
+  1:
+    name: 'Ay Harabeleri'
+    unlock-kills: 0
+    health: 24
+    dust: 1
+    crate: vote
+  2:
+    name: 'Meteor Geçidi'
+    unlock-kills: 15
+    health: 42
+    dust: 2
+    crate: tarım
+  3:
+    name: 'Boşluk Tapınağı'
+    unlock-kills: 40
+    health: 64
+    dust: 3
+    crate: novacraft
+# Girişler mevcut WorldGuard level1/level2/level3 bölgelerindeki güvenli zeminden bulunur.
+# /dungeonadmin setspawn <1|2|3> ile özel giriş belirlenebilir.

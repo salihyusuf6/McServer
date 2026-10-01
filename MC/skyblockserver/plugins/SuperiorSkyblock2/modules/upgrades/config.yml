@@ -1,0 +1,287 @@
+######################################################
+##                                                  ##
+##                SuperiorSkyblock 2                ##
+##                Developed by Ome_R                ##
+##                                                  ##
+######################################################
+
+# Whether crop-growth should be enabled.
+# When disabled, the plugin will not alter crop growth.
+crop-growth: true
+
+# Whether mob drops should be enabled.
+# When disabled, the plugin will not alter mob drops.
+mob-drops: true
+
+# Whether island-effects should be enabled.
+# When disabled, the plugin will not give any effects to any players.
+island-effects: true
+
+# Whether spawner-rates should be enabled.
+# When disabled, the plugin will not alter spawner rates.
+spawner-rates: true
+
+# Whether block-limits should be enabled.
+# When disabled, the plugin will not limit placement of blocks.
+block-limits: true
+
+# Whether entity-limits should be enabled.
+# When disabled, the plugin will not limit spawning of entities.
+entity-limits: true
+
+# All the upgrades of the plugin
+# https://wiki.bg-software.com/superiorskyblock/upgrades
+upgrades:
+  hoppers-limit:
+    '1':
+      price: 200000.0
+      price-type: "Money"
+      block-limits:
+        HOPPER: 8
+      commands:
+        - 'island admin setupgrade %player% hoppers-limit 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Huni limitin 16 oldu!'
+    '2':
+      price: 600000.0
+      price-type: "Money"
+      block-limits:
+        HOPPER: 16
+      commands:
+        - 'island admin setupgrade %player% hoppers-limit 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Huni limitin 32 oldu!'
+    '3':
+      price: 1500000.0
+      price-type: "Money"
+      block-limits:
+        HOPPER: 32
+      commands:
+        - 'island admin setupgrade %player% hoppers-limit 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Huni limitin 64 oldu!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      block-limits:
+        HOPPER: 64
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Huni limitin son seviyede.'
+  crop-growth:
+    '1':
+      price: 40000.0
+      price-type: "Money"
+      crop-growth: 1
+      commands:
+        - 'island admin setupgrade %player% crop-growth 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Ekin buyume carpanin x2 oldu!'
+    '2':
+      price: 150000.0
+      price-type: "Money"
+      crop-growth: 15
+      commands:
+        - 'island admin setupgrade %player% crop-growth 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Ekin buyume carpanin x3 oldu!'
+    '3':
+      price: 400000.0
+      price-type: "Money"
+      crop-growth: 25
+      commands:
+        - 'island admin setupgrade %player% crop-growth 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Ekin buyume carpanin x4 oldu!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      crop-growth: 40
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Ekin buyume hizi son seviyede.'
+  spawner-rates:
+    '1':
+      price: 100000.0
+      price-type: "Money"
+      spawner-rates: 1
+      commands:
+        - 'island admin setupgrade %player% spawner-rates 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Spawner hizin x2 oldu!'
+    '2':
+      price: 300000.0
+      price-type: "Money"
+      spawner-rates: 2
+      commands:
+        - 'island admin setupgrade %player% spawner-rates 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Spawner hizin x3 oldu!'
+    '3':
+      price: 750000.0
+      price-type: "Money"
+      spawner-rates: 3
+      commands:
+        - 'island admin setupgrade %player% spawner-rates 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Spawner hizin x4 oldu!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      spawner-rates: 4
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Spawner hizi son seviyede.'
+  mob-drops:
+    '1':
+      price: 150000.0
+      price-type: "Money"
+      mob-drops: 1
+      commands:
+        - 'island admin setupgrade %player% mob-drops 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Canavar ganimeti carpanin x2 oldu!'
+    '2':
+      price: 400000.0
+      price-type: "Money"
+      mob-drops: 2
+      commands:
+        - 'island admin setupgrade %player% mob-drops 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Canavar ganimeti carpanin x3 oldu!'
+    '3':
+      price: 900000.0
+      price-type: "Money"
+      mob-drops: 3
+      commands:
+        - 'island admin setupgrade %player% mob-drops 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Canavar ganimeti carpanin x4 oldu!'
+    '4':
+      price: 0.0
+      mob-drops: 4
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Canavar ganimeti carpani son seviyede.'
+  members-limit:
+    '1':
+      price: 25000.0
+      price-type: "Money"
+      team-limit: 4
+      commands:
+        - 'island admin setupgrade %player% members-limit 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Uye limitin 8 oldu!'
+    '2':
+      price: 75000.0
+      price-type: "Money"
+      team-limit: 8
+      commands:
+        - 'island admin setupgrade %player% members-limit 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Uye limitin 16 oldu!'
+    '3':
+      price: 200000.0
+      price-type: "Money"
+      team-limit: 16
+      commands:
+        - 'island admin setupgrade %player% members-limit 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Uye limitin 32 oldu!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      team-limit: 32
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Uye limitin son seviyede.'
+  border-size:
+    '1':
+      price: 15000.0
+      price-type: "Money"
+      border-size: 25
+      commands:
+        - 'island admin setupgrade %player% border-size 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Ada sinirin 100x100 bloga cikti!'
+    '2':
+      price: 50000.0
+      price-type: "Money"
+      border-size: 50
+      commands:
+        - 'island admin setupgrade %player% border-size 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Ada sinirin 150x150 bloga cikti!'
+    '3':
+      price: 120000.0
+      price-type: "Money"
+      border-size: 75
+      commands:
+        - 'island admin setupgrade %player% border-size 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Ada sinirin 250x250 bloga cikti!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      border-size: 125
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Ada sinirini son seviyeye getirdin.'
+  generator-rates:
+    '1':
+      price: 20000.0
+      price-type: "Money"
+      generator-rates:
+        normal:
+          STONE: 95
+          COAL_ORE: 5
+      commands:
+        - 'island admin setupgrade %player% generator-rates 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Jeneratorun 2. seviyeye cikti!'
+    '2':
+      price: 60000.0
+      price-type: "Money"
+      generator-rates:
+        normal:
+          STONE: 92
+          COAL_ORE: 5
+          REDSTONE_ORE: 3
+      commands:
+        - 'island admin setupgrade %player% generator-rates 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Jeneratorun 3. seviyeye cikti!'
+    '3':
+      price: 150000.0
+      price-type: "Money"
+      generator-rates:
+        normal:
+          STONE: 80
+          COAL_ORE: 8
+          REDSTONE_ORE: 6
+          LAPIS_ORE: 4
+          IRON_ORE: 2
+      commands:
+        - 'island admin setupgrade %player% generator-rates 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Jeneratorun 4. seviyeye cikti!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      generator-rates:
+        normal:
+          STONE: 65
+          COAL_ORE: 10
+          REDSTONE_ORE: 9
+          LAPIS_ORE: 6
+          IRON_ORE: 4
+          GOLD_ORE: 3
+          DIAMOND_ORE: 2
+          EMERALD_ORE: 1
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Jeneratorun son seviyede.'
+  minecarts-limit:
+    '1':
+      price: 250000.0
+      price-type: "Money"
+      entity-limits:
+        MINECART: 4
+      commands:
+        - 'island admin setupgrade %player% minecarts-limit 2'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Vagon limitin 8 oldu!'
+    '2':
+      price: 750000.0
+      price-type: "Money"
+      entity-limits:
+        MINECART: 8
+      commands:
+        - 'island admin setupgrade %player% minecarts-limit 3'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Vagon limitin 16 oldu!'
+    '3':
+      price: 2000000.0
+      price-type: "Money"
+      entity-limits:
+        MINECART: 16
+      commands:
+        - 'island admin setupgrade %player% minecarts-limit 4'
+        - 'island admin msgall %player% &b&lNOVA &8» &7Vagon limitin 32 oldu!'
+    '4':
+      price: 0.0
+      price-type: "Money"
+      entity-limits:
+        MINECART: 32
+      commands:
+        - 'island admin msg %player% &b&lNOVA &8» &7Vagon limitin son seviyede.'

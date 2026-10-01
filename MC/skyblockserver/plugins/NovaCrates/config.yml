@@ -1,0 +1,93 @@
+# Nova kasalari. Odul bicimleri (son alan her zaman agirliktir):
+#   ITEM:<MATERYAL>:<adet>:<agirlik>
+#   MONEY:<tutar>:<agirlik>            (en fazla 100.000)
+#   DUST:<toz>:<agirlik>               (Yildiz Tozu)
+#   COMMAND:<IKON>:<etiket>:<konsol komutu>:<agirlik>   (komut ':' iceremez, %player% = oyuncu)
+# Olasilik = agirlik / kasadaki toplam agirlik. Her kasada toplam 100 tutuldu.
+# Beklenen deger (EV) anahtarin nadirligine gore ayarlandi:
+#   Yorunge ~1.600  |  Yildiz Hasadi ~3.100  |  Supernova ~12.700  |  Spawner ~53.000 para esdegeri
+crates:
+  vote:
+    display: '&b✦ Yörünge Kasası'
+    key-name: '&bYörünge Anahtarı'
+    visual-material: DIAMOND_BLOCK
+    renk: '#4FD1FF'
+    anahtar-kaynagi: Oy, matematik, Zindan 1
+    rewards:
+    - MONEY:1000:23
+    - ITEM:IRON_INGOT:16:15
+    - DUST:12:12
+    - ITEM:GOLD_INGOT:8:10
+    - MONEY:2500:10
+    - ITEM:DIAMOND:4:10
+    - COMMAND:BLAZE_ROD:&6Satış Değneği &7(10 kullanım):market degnek %player% 10:6
+    - MONEY:5000:6
+    - COMMAND:GOLDEN_HOE:&6Çiftçi Minyon:minyon give %player% farmer 1:4
+    - COMMAND:TRIPWIRE_HOOK:&aYıldız Hasadı Anahtarı:crate give %player% tarım 1:3
+    - COMMAND:TRIPWIRE_HOOK:&dSüpernova Anahtarı:crate give %player% novacraft 1:1
+  
+  tarım:
+    display: '&a✦ Yıldız Hasadı Kasası'
+    key-name: '&aYıldız Hasadı Anahtarı'
+    visual-material: EMERALD_BLOCK
+    renk: '#7CFC66'
+    anahtar-kaynagi: Günlük 5. gün, Zindan 2
+    rewards:
+    - MONEY:2000:21
+    - ITEM:BONE_MEAL:64:12
+    - ITEM:GOLDEN_CARROT:8:10
+    - MONEY:5000:10
+    - DUST:20:10
+    - ITEM:NETHER_WART:16:8
+    - COMMAND:GOLDEN_HOE:&6Çiftçi Minyon:minyon give %player% farmer 1:8
+    - ITEM:GOLDEN_APPLE:2:6
+    - COMMAND:BLAZE_ROD:&6Satış Değneği &7(25 kullanım):market degnek %player% 25:6
+    - COMMAND:FISHING_ROD:&bBalıkçı Minyon:minyon give %player% fisher 1:4
+    - COMMAND:TRIPWIRE_HOOK:&dSüpernova Anahtarı:crate give %player% novacraft 1:3
+    - COMMAND:GOLDEN_HOE:&6Çiftçi Minyon &e(Seviye 3):minyon give %player% farmer
+      1 3:2
+  
+  novacraft:
+    display: '&d✦ Süpernova Kasası'
+    key-name: '&dSüpernova Anahtarı'
+    visual-material: AMETHYST_BLOCK
+    renk: '#D65CFF'
+    anahtar-kaynagi: Günlük 7. gün, Zindan 3-5
+    rewards:
+    - MONEY:10000:17
+    - ITEM:DIAMOND:16:12
+    - DUST:35:12
+    - ITEM:EMERALD:16:10
+    - MONEY:25000:10
+    - COMMAND:GOLDEN_PICKAXE:&7Madenci Minyon:minyon give %player% miner 1:8
+    - ITEM:GOLDEN_APPLE:4:8
+    - COMMAND:GOLDEN_SWORD:&cSavaşçı Minyon:minyon give %player% killer 1:6
+    - ITEM:NETHERITE_INGOT:1:5
+    - COMMAND:TRIPWIRE_HOOK:&eSpawner Anahtarı:crate give %player% spawner 1:5
+    - MONEY:50000:3
+    - COMMAND:BLAZE_ROD:&6&lSınırsız Satış Değneği:market degnek %player% -1:2
+    - COMMAND:GOLDEN_PICKAXE:&7Madenci Minyon &e(Seviye 5):minyon give %player% miner
+      1 5:2
+  
+  spawner:
+    display: '&e✦ Spawner Kasası'
+    key-name: '&eSpawner Anahtarı'
+    visual-material: SPAWNER
+    renk: '#FFB020'
+    anahtar-kaynagi: Rütbe atla, son görevler
+    rewards:
+    - COMMAND:SPAWNER:&eZombi Spawner:market spawner %player% ZOMBIE 1:25
+    - COMMAND:SPAWNER:&eİskelet Spawner:market spawner %player% SKELETON 1:18
+    - COMMAND:SPAWNER:&eÖrümcek Spawner:market spawner %player% SPIDER 1:18
+    - COMMAND:SPAWNER:&eCreeper Spawner:market spawner %player% CREEPER 1:12
+    - COMMAND:SPAWNER:&eİnek Spawner:market spawner %player% COW 1:10
+    - COMMAND:SPAWNER:&6Blaze Spawner:market spawner %player% BLAZE 1:7
+    - COMMAND:SPAWNER:&5Enderman Spawner:market spawner %player% ENDERMAN 1:5
+    - MONEY:25000:3
+    - COMMAND:SPAWNER:&c&lDemir Golem Spawner:market spawner %player% IRON_GOLEM 1:2
+
+crate-locations:
+  vote: world,256,138,1408
+  tarım: world,256,138,1414
+  novacraft: world,256,139,1411
+  spawner: world,253,139,1416

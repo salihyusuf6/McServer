@@ -1,0 +1,68 @@
+######################################################
+##  Nova Skyblock - Kasif II - End
+######################################################
+
+mission-file: IslandMissions
+auto-reward: true
+
+required-missions:
+  - 'explorer_1'
+
+rewards:
+  commands:
+    - 'eco give %player% 120000'
+    - 'crate give %player% novacraft 1'
+    - 'is admin msg %player% &b&lNOVA &8» &7Kasif II - End gorevini tamamladin!'
+    - 'is admin msg %player% &b&lNOVA &8» &7Sunucudaki butun dunyalari actin.'
+    - 'is admin msg %player% &b&lNOVA &8» &7Butun gorevler: &f/is missions'
+
+events:
+  - IslandSchematicPasteEvent
+success-check: 'event.getSchematic().endsWith("_the_end")'
+
+icons:
+  locked:
+    type: PAPER
+    name: '&aKasif II - End'
+    lore:
+      - 'Adanin End bolumunu ac.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &7120.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - ''
+      - '&c&l ✘ &7Kilitli &8(once Kasif I - Nether)'
+  not-completed:
+    type: PAPER
+    name: '&aKasif II - End'
+    lore:
+      - 'Adanin End bolumunu ac.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &7120.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - ''
+      - '&c&l ✘ &7Tamamlanmadi'
+  can-complete:
+    type: PAPER
+    name: '&aKasif II - End'
+    lore:
+      - 'Adanin End bolumunu ac.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &7120.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - ''
+      - '&a&l ✔ &7Odulu almak icin tikla.'
+    glow: true
+  completed:
+    type: MAP
+    name: '&aKasif II - End'
+    lore:
+      - 'Adanin End bolumunu ac.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &7120.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - ''
+      - '&a&l ✔ &7Odul alindi.'

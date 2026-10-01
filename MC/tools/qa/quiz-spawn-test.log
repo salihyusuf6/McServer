@@ -1,0 +1,17 @@
+[20:55:35] [Server thread/INFO]: [NovaProbe] PASS: AUTOMATIC spawn tier 3 normal player 54 kills
+[20:55:35] [Server thread/INFO]: [NovaProbe] PASS: Automatic correct mob type 3
+[20:55:40] [Server thread/INFO]: [NovaProbe] PASS: AUTOMATIC spawn tier 1 OP with zero kills
+[20:55:40] [Server thread/INFO]: [NovaProbe] PASS: Automatic correct mob type 1
+[20:55:45] [Server thread/INFO]: [NovaProbe] PASS: AUTOMATIC spawn tier 2 OP with zero kills
+[20:55:45] [Server thread/INFO]: [NovaProbe] PASS: Automatic correct mob type 2
+[20:55:50] [Server thread/INFO]: [NovaProbe] PASS: AUTOMATIC spawn tier 3 OP with zero kills
+[20:55:50] [Server thread/INFO]: [NovaProbe] PASS: Automatic correct mob type 3
+[20:55:55] [Server thread/INFO]: [NovaProbe] PASS: AUTOMATIC spawn tier 4 OP with zero kills
+[20:55:55] [Server thread/INFO]: [NovaProbe] PASS: Automatic correct mob type 4
+[20:56:00] [Server thread/INFO]: [NovaProbe] PASS: AUTOMATIC spawn tier 5 OP with zero kills
+[20:56:00] [Server thread/INFO]: [NovaProbe] PASS: Automatic correct mob type 5
+[20:56:01] [Server thread/INFO]: ✦ Matematik CosmosProbe ilk doğru cevabı verdi: 32! Ödül: 1 vote anahtarı + 5 Yıldız Tozu
+[20:56:03] [Server thread/INFO]: ✦ Matematik CosmosProbe ilk doğru cevabı verdi: 22! Ödül: 1 vote anahtarı + 5 Yıldız Tozu
+PASS: Mineflayer quiz-spawn-test.cjs exited 0: wrong/correct/duplicate answers; 1 vote key + 5 dust; full inventory and idempotent retry.
+PASS: MathRoundTest: 24 concurrent answers, exactly one winner.
+PASS: ProgressTest persistence and receipt copy isolation.

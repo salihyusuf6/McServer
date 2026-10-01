@@ -1,0 +1,27 @@
+name: NovaCosmos
+version: 1.0.0
+main: org.nova.cosmos.NovaCosmos
+api-version: '1.20'
+depend: [SuperiorSkyblock2]
+softdepend: [WorldGuard]
+description: Uzay temalı Skyblock ekipmanları, görevler ve etkinlikler.
+commands:
+  uzay:
+    description: Nova Cosmos kontrol merkezi
+    aliases: [cosmos]
+    usage: /uzay
+permissions:
+  novacosmos.player:
+    description: Temel Skyblock ada komutları (LuckPerms ile ayrı ayrı reddedilebilir).
+    default: true
+    children:
+      superior.island.create: true
+      superior.island.go: true
+      superior.island.menu: true
+      superior.island.invite: true
+      superior.island.accept: true
+      superior.island.leave: true
+      superior.island.kick: true
+      superior.island.disband: true
+  novacosmos.admin:
+    default: op

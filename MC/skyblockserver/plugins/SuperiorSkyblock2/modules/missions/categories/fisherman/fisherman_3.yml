@@ -1,0 +1,104 @@
+######################################################
+##  Nova Skyblock - Balikci III
+######################################################
+
+mission-file: FishingMissions
+auto-reward: true
+reset-after-finish: true
+
+required-missions:
+  - 'fisherman_2'
+
+rewards:
+  commands:
+    - 'eco give %player% 28000'
+    - 'crate give %player% novacraft 1'
+    - 'crate give %player% spawner 1'
+    - 'is admin msg %player% &b&lNOVA &8» &7Balikci III gorevini tamamladin!'
+    - 'is admin msg %player% &b&lNOVA &8» &7Balikci zinciri tamam.'
+    - 'is admin msg %player% &b&lNOVA &8» &7Butun gorevler: &f/is missions'
+
+required-caughts:
+  '1':
+    types:
+      - 'COD'
+    amount: 160
+  '2':
+    types:
+      - 'SALMON'
+    amount: 160
+
+icons:
+  locked:
+    type: PAPER
+    name: '&aBalikci III'
+    lore:
+      - 'Adanin en iyi oltasini hak et.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x160 Morina'
+      - '&8 - &7x160 Somon'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &728.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - '&8 - &71 Spawner anahtarı'
+      - ''
+      - '&6Yakalanan Morina: &7{value_cod}/160'
+      - '&6Yakalanan Somon: &7{value_salmon}/160'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Kilitli &8(once Balikci II)'
+  not-completed:
+    type: PAPER
+    name: '&aBalikci III'
+    lore:
+      - 'Adanin en iyi oltasini hak et.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x160 Morina'
+      - '&8 - &7x160 Somon'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &728.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - '&8 - &71 Spawner anahtarı'
+      - ''
+      - '&6Yakalanan Morina: &7{value_cod}/160'
+      - '&6Yakalanan Somon: &7{value_salmon}/160'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Tamamlanmadi'
+  can-complete:
+    type: PAPER
+    name: '&aBalikci III'
+    lore:
+      - 'Adanin en iyi oltasini hak et.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x160 Morina'
+      - '&8 - &7x160 Somon'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &728.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - '&8 - &71 Spawner anahtarı'
+      - ''
+      - '&6Yakalanan Morina: &7160/160'
+      - '&6Yakalanan Somon: &7160/160'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odulu almak icin tikla.'
+    glow: true
+  completed:
+    type: MAP
+    name: '&aBalikci III'
+    lore:
+      - 'Adanin en iyi oltasini hak et.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &728.000 para'
+      - '&8 - &71 Süpernova anahtarı'
+      - '&8 - &71 Spawner anahtarı'
+      - ''
+      - '&6Yakalanan Morina: &7160/160'
+      - '&6Yakalanan Somon: &7160/160'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odul alindi.'

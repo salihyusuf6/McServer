@@ -1,0 +1,77 @@
+# NovaRewards - sadakat ve ilerleme odulleri.
+# %player% oyuncunun adiyla degistirilir. Komutlar konsolda calisir.
+
+gunluk:
+  enabled: true
+  # Gun serisi bozulunca 1. gunden baslar.
+  seri-bozulunca-sifirla: true
+  # 7. gunden sonra seri devam eder, odul 7. gunun odulu olur.
+  oduller:
+    1:
+      para: 1000
+      komutlar: []
+      aciklama: '1.000 para'
+    2:
+      para: 2000
+      komutlar: []
+      aciklama: '2.000 para'
+    3:
+      para: 3000
+      komutlar: ['crate give %player% vote 1']
+      aciklama: '3.000 para + 1 Yörünge anahtarı'
+    4:
+      para: 4000
+      komutlar: []
+      aciklama: '4.000 para'
+    5:
+      para: 5000
+      komutlar: ['crate give %player% tarım 1']
+      aciklama: '5.000 para + 1 Yıldız Hasadı anahtarı'
+    6:
+      para: 7500
+      komutlar: []
+      aciklama: '7.500 para'
+    7:
+      para: 12500
+      komutlar: ['crate give %player% novacraft 1']
+      aciklama: '12.500 para + 1 Süpernova anahtarı'
+
+oynama-odulleri:
+  enabled: true
+  # Her bu kadar dakikalik AKTIF oyun sonunda odul verilir.
+  aralik-dakika: 30
+  # Son bu kadar dakikada hareket/etkilesim yoksa oyuncu AFK sayilir, sure islemez.
+  afk-dakika: 5
+  para: 500
+  komutlar: []
+
+rankup:
+  enabled: true
+  # Sirayla yukselir. 'komutlar' LuckPerms grubunu EKLER (parent add).
+  # Onceki rutbe grubu eklenti tarafindan otomatik kaldirilir; kurucu/vip gibi
+  # diger gruplar korunur. Gruplar ve kalitim zinciri kurulmustur.
+  rutbeler:
+    - id: tas
+      ad: '&7Taş'
+      fiyat: 25000
+      komutlar: ['lp user %player% parent add tas', 'crate give %player% spawner 1']
+    - id: demir
+      ad: '&fDemir'
+      fiyat: 100000
+      komutlar: ['lp user %player% parent add demir', 'crate give %player% spawner 1']
+    - id: altin
+      ad: '&6Altın'
+      fiyat: 350000
+      komutlar: ['lp user %player% parent add altin', 'crate give %player% spawner 1']
+    - id: elmas
+      ad: '&bElmas'
+      fiyat: 1000000
+      komutlar: ['lp user %player% parent add elmas', 'crate give %player% spawner 1']
+    - id: zumrut
+      ad: '&aZümrüt'
+      fiyat: 3000000
+      komutlar: ['lp user %player% parent add zumrut', 'crate give %player% spawner 1']
+    - id: nova
+      ad: '&d&lNOVA'
+      fiyat: 10000000
+      komutlar: ['lp user %player% parent add nova', 'crate give %player% spawner 2', 'broadcast &d%player% &7NOVA rütbesine ulaştı!']

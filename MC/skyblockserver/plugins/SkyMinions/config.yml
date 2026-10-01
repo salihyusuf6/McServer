@@ -1,0 +1,66 @@
+# SkyMinions - minyon ayarlari. Sureler saniyedir.
+# Satis fiyatlari NovaEconomy market tablosundan okunur (plugins/NovaEconomy/config.yml).
+
+minyon-fiyatlari:
+  farmer: 5000.0
+  miner: 7500.0
+  fisher: 9000.0
+  killer: 15000.0
+
+# Oyuncu basina ayni turden en fazla kac minyon.
+minyon-limitleri:
+  farmer: 2
+  miner: 2
+  fisher: 1
+  killer: 1
+
+minyon-settings:
+  farmer:
+    name: "§6Çiftçi Minyon"
+    toplama-araligi: 5
+    baslangic-seviye: 1
+    max-seviye: 10
+    yukseltme-temel-fiyat: 2500.0
+
+  miner:
+    name: "§7Madenci Minyon"
+    toplama-araligi: 6
+    max-seviye: 10
+    yukseltme-temel-fiyat: 4000.0
+    # Minyonun cevresinde kazacagi yaricap (seviyeyle artar, en fazla 4).
+    yaricap: 2
+    # Bir turda en fazla kac blok kazar.
+    tur-basina-blok: 3
+    # Yalniz bu bloklara dokunur. Liste bosalirsa varsayilan cevher listesi kullanilir.
+    kazilabilir:
+      - COBBLESTONE
+      - STONE
+      - COAL_ORE
+      - IRON_ORE
+      - COPPER_ORE
+      - GOLD_ORE
+      - REDSTONE_ORE
+      - LAPIS_ORE
+      - DIAMOND_ORE
+      - EMERALD_ORE
+      - NETHER_QUARTZ_ORE
+      - NETHER_GOLD_ORE
+
+  fisher:
+    name: "§bBalıkçı Minyon"
+    toplama-araligi: 10
+    max-seviye: 10
+    yukseltme-temel-fiyat: 5000.0
+    # Minyonun cevresinde su aranan yaricap.
+    su-yaricapi: 2
+    # Hazine cikma yuzdesi.
+    hazine-yuzdesi: 8
+
+  killer:
+    name: "§cSavaşçı Minyon"
+    toplama-araligi: 4
+    max-seviye: 10
+    yukseltme-temel-fiyat: 7500.0
+    yaricap: 5
+    hasar: 3.0
+    tur-basina-canavar: 2

@@ -1,0 +1,95 @@
+######################################################
+##  Nova Skyblock - Madenci II
+######################################################
+
+mission-file: BlocksMissions
+auto-reward: true
+reset-after-finish: true
+only-natural-blocks: true
+
+required-missions:
+  - 'miner_1'
+
+rewards:
+  commands:
+    - 'eco give %player% 4000'
+    - 'is admin msg %player% &b&lNOVA &8» &7Madenci II gorevini tamamladin!'
+    - 'is admin msg %player% &b&lNOVA &8» &7Altin ve kizil tas siradaki hedefin.'
+    - 'is admin msg %player% &b&lNOVA &8» &7Butun gorevler: &f/is missions'
+
+required-blocks:
+  '1':
+    types:
+      - 'IRON_ORE'
+    amount: 64
+  '2':
+    types:
+      - 'COAL_ORE'
+    amount: 64
+
+icons:
+  locked:
+    type: PAPER
+    name: '&aMadenci II'
+    lore:
+      - 'Jeneratorden cikan demiri isle.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x64 Demir Cevheri'
+      - '&8 - &7x64 Komur Cevheri'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &74.000 para'
+      - ''
+      - '&6Kazilan Demir Cevheri: &7{value_iron_ore}/64'
+      - '&6Kazilan Komur Cevheri: &7{value_coal_ore}/64'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Kilitli &8(once Madenci I)'
+  not-completed:
+    type: PAPER
+    name: '&aMadenci II'
+    lore:
+      - 'Jeneratorden cikan demiri isle.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x64 Demir Cevheri'
+      - '&8 - &7x64 Komur Cevheri'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &74.000 para'
+      - ''
+      - '&6Kazilan Demir Cevheri: &7{value_iron_ore}/64'
+      - '&6Kazilan Komur Cevheri: &7{value_coal_ore}/64'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Tamamlanmadi'
+  can-complete:
+    type: PAPER
+    name: '&aMadenci II'
+    lore:
+      - 'Jeneratorden cikan demiri isle.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x64 Demir Cevheri'
+      - '&8 - &7x64 Komur Cevheri'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &74.000 para'
+      - ''
+      - '&6Kazilan Demir Cevheri: &764/64'
+      - '&6Kazilan Komur Cevheri: &764/64'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odulu almak icin tikla.'
+    glow: true
+  completed:
+    type: MAP
+    name: '&aMadenci II'
+    lore:
+      - 'Jeneratorden cikan demiri isle.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &74.000 para'
+      - ''
+      - '&6Kazilan Demir Cevheri: &764/64'
+      - '&6Kazilan Komur Cevheri: &764/64'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odul alindi.'

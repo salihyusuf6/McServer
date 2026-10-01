@@ -1,0 +1,104 @@
+#########################################################################################################################################
+#
+#
+#   Sponsor: https://serveur-minecraft-vote.fr/
+#   Sponsor 2 : https://minecraft-inventory-builder.com/
+#   5€ gift code on Minecraft Vote Server : ZVOTEPARTY (https://serveur-minecraft-vote.fr/utiliser/un/code/cadeau?code=ZVOTEPARTY)
+#   
+#   Documentation: https://groupez.dev/resources/zvoteparty.124/wiki
+#   Discord: https://discord.groupez.dev/
+# 
+# 
+# ███████╗██╗░░░██╗░█████╗░████████╗███████╗██████╗░░█████╗░██████╗░████████╗██╗░░░██╗
+# ╚════██║██║░░░██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝╚██╗░██╔╝
+# ░░███╔═╝╚██╗░██╔╝██║░░██║░░░██║░░░█████╗░░██████╔╝███████║██████╔╝░░░██║░░░░╚████╔╝░
+# ██╔══╝░░░╚████╔╝░██║░░██║░░░██║░░░██╔══╝░░██╔═══╝░██╔══██║██╔══██╗░░░██║░░░░░╚██╔╝░░
+# ███████╗░░╚██╔╝░░╚█████╔╝░░░██║░░░███████╗██║░░░░░██║░░██║██║░░██║░░░██║░░░░░░██║░░░
+# ╚══════╝░░░╚═╝░░░░╚════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░
+#
+#
+#   Commands and permissions:
+#   - /vote » Open vote invenroy - zvoteparty.vote
+#   - /zvoteparty » Show needed votes for vote party (aliases: /vp, /voteparty) - zvoteparty.use
+#   - /zvoteparty reload » Reload configuration - zvoteparty.reload
+#   - /zvoteparty config » Open ingame configuration - zvoteparty.config
+#   - /zvoteparty version » Show plugin version
+#   - /zvoteparty help » Send commands description and syntax - zvoteparty.help
+#   - /zvoteparty add » Add vote to player - zvoteparty.add
+#   - /zvoteparty startparty » Force launch a Vote Party - zvoteparty.startparty
+#   
+#   Placeholders:
+#   - %zvoteparty_votes_recorded% » Returns the current amount of votes in the Vote Party.   
+#   - %zvoteparty_votes_required_party% » Returns the amount of votes left that are needed for a Vote Party to happen.
+#   - %zvoteparty_votes_required_total% » Returns the total amount of votes needed for a Vote Party to happen.
+#   - %zvoteparty_player_votes% » Returns the total amount of votes a player has.
+#   - %zvoteparty_votes_progressbar% » Return a progress bar for the vote party
+#   
+#   
+#########################################################################################################################################
+
+# Rewards when a player goes to vote
+rewards:
+  1:
+    percent: 10
+    needToBeOnline: false # Player must not be online to receive the reward
+    commands:
+      - "eco give %player% 100"
+    broadcast:
+      - "&f%player% &7just won &a$100"
+  2:
+    percent: 30
+    needToBeOnline: true # Player must be online to receive the reward
+    commands:
+      - "give %player% minecraft:stone 10"
+    broadcast:
+      - "&f%player% &7just won &ax10 stone"      
+  3:
+    percent: 30
+    needToBeOnline: false # Player must not be online to receive the reward
+    commands:
+      - "eco give %player% 500"
+    broadcast: []   
+  4:
+    percent: 30
+    needToBeOnline: true # Player must be online to receive the reward
+    commands:
+      - "cr give %player% diamand"
+    broadcast:
+      - "&7&m----------"
+      - "&f%player% &7just won &ax1 diamand"
+      - "&7&m----------"      
+      
+party:
+  # The amount of votes needed
+  votes_needed: 50
+  
+  # The command that will be executed when the number of votes is reached for each online players
+  global_commands:
+    - "eco give %player% 100"
+    
+  # This command will be executed in the console, you cannot specify a player here
+  commands:
+    - "eco give * 0.0000000009"  
+  # Sound to be played after Vote Party is triggered.
+  # Sound: <SOUND>:<VOLUME>:<PITCH> - Name of the sound to play. A list of available sounds is found here: https://docs.andre601.ch/Spigot-Sounds/sounds/1.21.x/1.21.4/
+  Sound: UI_TOAST_CHALLENGE_COMPLETE:1:2
+    
+  # Rewards that the player can get randomly 
+  rewards:
+    1:
+      percent: 50
+      commands:
+        - "give %player% minecraft:diamond 1"
+    2:
+      percent: 50
+      commands:
+        - "cr give %player% test"  
+        
+#Database informations
+sql:
+  user: "homestead"
+  password: "secret"
+  port: 3306
+  host: "192.168.10.10"
+  database: "zvoteparty"         

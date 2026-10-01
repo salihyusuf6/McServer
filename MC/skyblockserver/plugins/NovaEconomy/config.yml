@@ -1,0 +1,175 @@
+# NovaEconomy market ayarlari. Butun fiyatlar TEK esya icindir.
+# sell: -1 -> satilamaz, buy: -1 -> satin alinamaz.
+# Guvenlik: satis fiyati alis fiyatindan buyuk/esit olan kayitlar acilista
+# devre disi birakilir (sonsuz para dongusunu engeller).
+market:
+  title: '§0✦ Nova Market'
+  # Satis islemlerinden kesilen vergi orani (0.0 - 0.9).
+  sell-tax: 0.0
+
+# Kirilan blogun urunu dogrudan cantaya girer. Oyuncu /toplama ile kapatabilir.
+# Sandik/firin gibi icerikli bloklara dokunulmaz.
+otomatik-toplama:
+  enabled: true
+  xp-de-al: true
+  # Bos liste = butun dunyalar.
+  dunyalar: []
+
+# Spawner marketi. Fiyat = satin alma fiyati; spawnerlar markete geri satilamaz.
+# Kasalar ayni esyayi /market spawner <oyuncu> <tur> [adet] ile verir.
+# Geri odeme suresi (tek spawner, katil minyonla): yaklasik 20-40 saat oyun.
+spawnerlar:
+  enabled: true
+  menu-slot: 33
+  liste:
+    CHICKEN: {ad: 'Tavuk', fiyat: 12000}
+    PIG: {ad: 'Domuz', fiyat: 15000}
+    COW: {ad: 'İnek', fiyat: 20000}
+    ZOMBIE: {ad: 'Zombi', fiyat: 25000}
+    SPIDER: {ad: 'Örümcek', fiyat: 35000}
+    SKELETON: {ad: 'İskelet', fiyat: 40000}
+    CREEPER: {ad: 'Creeper', fiyat: 60000}
+    ENDERMAN: {ad: 'Enderman', fiyat: 120000}
+    BLAZE: {ad: 'Blaze', fiyat: 150000}
+    IRON_GOLEM: {ad: 'Demir Golem', fiyat: 350000}
+
+# Otomatik satis sandiklari: /otosat ile acilir.
+otomatik-satis:
+  aralik-saniye: 30
+  oyuncu-basina-limit: 3
+
+categories:
+  madencilik:
+    name: '§b⛏ Madencilik'
+    icon: IRON_PICKAXE
+    slot: 10
+    items:
+      COBBLESTONE: {sell: 0.5, buy: 2}
+      STONE: {sell: 1, buy: 4}
+      DEEPSLATE: {sell: 1, buy: 4}
+      NETHERRACK: {sell: 0.5, buy: 2}
+      COAL: {sell: 4, buy: 16}
+      COPPER_INGOT: {sell: 6, buy: 24}
+      RAW_IRON: {sell: 10, buy: 40}
+      IRON_INGOT: {sell: 12, buy: 48}
+      RAW_GOLD: {sell: 16, buy: 64}
+      GOLD_INGOT: {sell: 20, buy: 80}
+      REDSTONE: {sell: 3, buy: 12}
+      LAPIS_LAZULI: {sell: 4, buy: 16}
+      QUARTZ: {sell: 5, buy: 20}
+      AMETHYST_SHARD: {sell: 8, buy: 32}
+      GLOWSTONE_DUST: {sell: 6, buy: 24}
+      OBSIDIAN: {sell: 25, buy: 100}
+      DIAMOND: {sell: 60, buy: 240}
+      EMERALD: {sell: 50, buy: 200}
+      ANCIENT_DEBRIS: {sell: 700, buy: 2800}
+      NETHERITE_INGOT: {sell: 2500, buy: 10000}
+
+  ciftlik:
+    name: '§a🌾 Çiftlik'
+    icon: WHEAT
+    slot: 12
+    items:
+      WHEAT: {sell: 3, buy: 12}
+      WHEAT_SEEDS: {sell: 1, buy: 4}
+      CARROT: {sell: 2.5, buy: 10}
+      POTATO: {sell: 2.5, buy: 10}
+      BEETROOT: {sell: 3, buy: 12}
+      BEETROOT_SEEDS: {sell: 1, buy: 4}
+      MELON_SLICE: {sell: 1.5, buy: 6}
+      PUMPKIN: {sell: 5, buy: 20}
+      SUGAR_CANE: {sell: 3, buy: 12}
+      CACTUS: {sell: 3, buy: 12}
+      BAMBOO: {sell: 1, buy: 4}
+      COCOA_BEANS: {sell: 3, buy: 12}
+      NETHER_WART: {sell: 6, buy: 24}
+      KELP: {sell: 1, buy: 4}
+      SWEET_BERRIES: {sell: 2, buy: 8}
+      BROWN_MUSHROOM: {sell: 3, buy: 12}
+      RED_MUSHROOM: {sell: 3, buy: 12}
+      BONE_MEAL: {sell: 1, buy: 4}
+
+  orman:
+    name: '§2🌳 Orman'
+    icon: OAK_LOG
+    slot: 14
+    items:
+      OAK_LOG: {sell: 3, buy: 12}
+      SPRUCE_LOG: {sell: 3, buy: 12}
+      BIRCH_LOG: {sell: 3, buy: 12}
+      JUNGLE_LOG: {sell: 3, buy: 12}
+      ACACIA_LOG: {sell: 3, buy: 12}
+      DARK_OAK_LOG: {sell: 3, buy: 12}
+      CHERRY_LOG: {sell: 4, buy: 16}
+      MANGROVE_LOG: {sell: 4, buy: 16}
+      CRIMSON_STEM: {sell: 4, buy: 16}
+      WARPED_STEM: {sell: 4, buy: 16}
+      OAK_SAPLING: {sell: 2, buy: 8}
+      SPRUCE_SAPLING: {sell: 2, buy: 8}
+      BIRCH_SAPLING: {sell: 2, buy: 8}
+      JUNGLE_SAPLING: {sell: 2, buy: 8}
+      STICK: {sell: 0.4, buy: 2}
+      VINE: {sell: 1, buy: 4}
+
+  avcilik:
+    name: '§c⚔ Avcılık'
+    icon: DIAMOND_SWORD
+    slot: 16
+    items:
+      ROTTEN_FLESH: {sell: 1.5, buy: 6}
+      BONE: {sell: 3, buy: 12}
+      STRING: {sell: 3, buy: 12}
+      FEATHER: {sell: 2, buy: 8}
+      LEATHER: {sell: 5, buy: 20}
+      ARROW: {sell: 1, buy: 4}
+      SPIDER_EYE: {sell: 4, buy: 16}
+      GUNPOWDER: {sell: 8, buy: 32}
+      SLIME_BALL: {sell: 8, buy: 32}
+      MAGMA_CREAM: {sell: 15, buy: 60}
+      PHANTOM_MEMBRANE: {sell: 25, buy: 100}
+      ENDER_PEARL: {sell: 25, buy: 100}
+      BLAZE_ROD: {sell: 30, buy: 120}
+      GHAST_TEAR: {sell: 45, buy: 180}
+
+  yiyecek:
+    name: '§6🍗 Yiyecek'
+    icon: COOKED_BEEF
+    slot: 29
+    items:
+      BEEF: {sell: 5, buy: 20}
+      PORKCHOP: {sell: 5, buy: 20}
+      CHICKEN: {sell: 4, buy: 16}
+      MUTTON: {sell: 4, buy: 16}
+      RABBIT: {sell: 5, buy: 20}
+      COD: {sell: 3, buy: 12}
+      SALMON: {sell: 4, buy: 16}
+      EGG: {sell: 2, buy: 8}
+      COOKED_BEEF: {sell: 7, buy: 28}
+      BREAD: {sell: -1, buy: 20}
+      GOLDEN_CARROT: {sell: -1, buy: 150}
+      GOLDEN_APPLE: {sell: -1, buy: 1500}
+
+  ekipman:
+    name: '§e🧰 Ekipman'
+    icon: CHEST
+    slot: 31
+    items:
+      TORCH: {sell: -1, buy: 2}
+      CRAFTING_TABLE: {sell: -1, buy: 20}
+      FURNACE: {sell: -1, buy: 30}
+      CHEST: {sell: -1, buy: 40}
+      COMPOSTER: {sell: -1, buy: 100}
+      SHEARS: {sell: -1, buy: 100}
+      FLINT_AND_STEEL: {sell: -1, buy: 100}
+      FISHING_ROD: {sell: -1, buy: 120}
+      BUCKET: {sell: -1, buy: 120}
+      WATER_BUCKET: {sell: -1, buy: 150}
+      BOOKSHELF: {sell: -1, buy: 300}
+      LAVA_BUCKET: {sell: -1, buy: 400}
+      CAULDRON: {sell: -1, buy: 400}
+      HOPPER: {sell: -1, buy: 400}
+      BREWING_STAND: {sell: -1, buy: 800}
+      ANVIL: {sell: -1, buy: 1200}
+      NAME_TAG: {sell: -1, buy: 1500}
+      ENCHANTING_TABLE: {sell: -1, buy: 2000}
+      ENDER_CHEST: {sell: -1, buy: 2500}

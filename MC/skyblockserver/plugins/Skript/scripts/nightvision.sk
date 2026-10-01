@@ -1,0 +1,8 @@
+command /gecegörüşü:
+    trigger:
+        if player has permission "gecegörüşü.use":
+            apply night vision to player for 999999 seconds
+            send "&aSınırsız gece görüşü açıldı!" to player
+        else:
+            send "&cBu komutu kullanamazsın!" to player
+

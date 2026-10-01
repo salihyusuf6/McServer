@@ -1,0 +1,11 @@
+# Spawn'daki liderlik hologramlari.
+# Konumlar /lider ayarla <ada|seviye|para> komutuyla yazilir.
+liderlik:
+  guncelleme-saniye: 30
+  satir-sayisi: 10
+  tablolar:
+    ada:
+      dunya: SuperiorWorld
+      x: 600.5500791314872
+      y: 102.2
+      z: -599.8205416757478

@@ -1,0 +1,8 @@
+# HTTP sunucusunun dinleyeceği port
+
+# HTTP sunucusunun dinleyeceği port
+httpPort: 8085
+
+
+# Node.js sunucusu ile aynı olması gereken gizli anahtar (güvenlik için)
+secret: "buCokGucluBirSifreOlmalı"

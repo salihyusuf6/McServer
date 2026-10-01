@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1789810361663
+  login: 1789810361603
+money: '0'
+last-account-name: NovaNetProbe
+logoutlocation:
+  world: 1596d067-dc15-4ff9-8155-448f594637f8
+  world-name: MainLobby
+  x: 0.5
+  y: 70.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0

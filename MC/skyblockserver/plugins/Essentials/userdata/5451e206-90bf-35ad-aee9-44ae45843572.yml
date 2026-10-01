@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1774798578311
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1774875710361
+  login: 1774875667507
+money: '5044.0'
+last-account-name: konyaatargololur
+logoutlocation:
+  world: 30a17745-c581-46f1-8e59-92add4e476cd
+  world-name: world
+  x: 218.72690512506875
+  y: 140.0
+  z: 1429.2868111246482
+  yaw: 177.22764587402344
+  pitch: 16.200040817260742
+lastlocation:
+  world: ebac5ec1-ecef-4853-89b4-bafbf4aca148
+  world-name: SuperiorWorld
+  x: -596.7805006513616
+  y: 100.0
+  z: 600.8931926273481
+  yaw: -90.30059814453125
+  pitch: 33.60002517700195

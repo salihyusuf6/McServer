@@ -1,0 +1,20 @@
+crates:
+  vote:
+    display: "&aVote Kasa"
+    key-name: "&aVote Key"
+    hologram:
+      - "&aVote Kasası"
+      - "&7Sağ tıkla!"
+
+    rewards:
+      - "ITEM:DIAMOND:2:20"
+      - "ITEM:GOLD_INGOT:10:50"
+      - "MONEY:500:30"
+
+  epic:
+    display: "&6Epic Kasa"
+    key-name: "&6Epic Key"
+
+    rewards:
+      - "ITEM:DIAMOND:5:40"
+      - "MONEY:2000:60"

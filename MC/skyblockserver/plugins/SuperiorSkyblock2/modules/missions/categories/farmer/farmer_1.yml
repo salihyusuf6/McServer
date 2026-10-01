@@ -1,0 +1,96 @@
+######################################################
+##  Nova Skyblock - Ciftci I
+######################################################
+
+mission-file: FarmingMissions
+auto-reward: true
+reset-after-finish: true
+
+rewards:
+  items:
+    '1':
+      type: BEETROOT_SEEDS
+      amount: 1
+    '2':
+      type: PUMPKIN_SEEDS
+      amount: 1
+    '3':
+      type: MELON_SEEDS
+      amount: 1
+  commands:
+    - 'eco give %player% 1500'
+    - 'is admin msg %player% &b&lNOVA &8» &7Ciftci I gorevini tamamladin!'
+    - 'is admin msg %player% &b&lNOVA &8» &7Seker kamisi en istikrarli gelir kaynagidir.'
+    - 'is admin msg %player% &b&lNOVA &8» &7Butun gorevler: &f/is missions'
+
+required-plants:
+  '1':
+    types:
+      - 'CARROT'
+    amount: 32
+  '2':
+    types:
+      - 'POTATO'
+    amount: 32
+  '3':
+    types:
+      - 'WHEAT'
+    amount: 64
+
+icons:
+  not-completed:
+    type: PAPER
+    name: '&aCiftci I'
+    lore:
+      - 'Kucuk bir tarla kur.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x32 Havuc'
+      - '&8 - &7x32 Patates'
+      - '&8 - &7x64 Bugday'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &71.500 para'
+      - '&8 - &71 pancar, 1 kabak, 1 karpuz tohumu'
+      - ''
+      - '&6Hasat Havuc: &7{value_carrot}/32'
+      - '&6Hasat Patates: &7{value_potato}/32'
+      - '&6Hasat Bugday: &7{value_wheat}/64'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Tamamlanmadi'
+  can-complete:
+    type: PAPER
+    name: '&aCiftci I'
+    lore:
+      - 'Kucuk bir tarla kur.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x32 Havuc'
+      - '&8 - &7x32 Patates'
+      - '&8 - &7x64 Bugday'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &71.500 para'
+      - '&8 - &71 pancar, 1 kabak, 1 karpuz tohumu'
+      - ''
+      - '&6Hasat Havuc: &732/32'
+      - '&6Hasat Patates: &732/32'
+      - '&6Hasat Bugday: &764/64'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odulu almak icin tikla.'
+    glow: true
+  completed:
+    type: MAP
+    name: '&aCiftci I'
+    lore:
+      - 'Kucuk bir tarla kur.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &71.500 para'
+      - '&8 - &71 pancar, 1 kabak, 1 karpuz tohumu'
+      - ''
+      - '&6Hasat Havuc: &732/32'
+      - '&6Hasat Patates: &732/32'
+      - '&6Hasat Bugday: &764/64'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odul alindi.'

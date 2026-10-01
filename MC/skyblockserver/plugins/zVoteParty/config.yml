@@ -1,0 +1,108 @@
+#########################################################################################################################################
+#
+#
+#   Sponsor: https://serveur-minecraft-vote.fr/
+#   Sponsor 2 : https://minecraft-inventory-builder.com/
+#   5€ gift code on Minecraft Vote Server : ZVOTEPARTY (https://serveur-minecraft-vote.fr/utiliser/un/code/cadeau?code=ZVOTEPARTY)
+#   
+#   Documentation: https://groupez.dev/resources/zvoteparty.124/wiki
+#   Discord: https://discord.groupez.dev/
+# 
+# 
+# ███████╗██╗░░░██╗░█████╗░████████╗███████╗██████╗░░█████╗░██████╗░████████╗██╗░░░██╗
+# ╚════██║██║░░░██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝╚██╗░██╔╝
+# ░░███╔═╝╚██╗░██╔╝██║░░██║░░░██║░░░█████╗░░██████╔╝███████║██████╔╝░░░██║░░░░╚████╔╝░
+# ██╔══╝░░░╚████╔╝░██║░░██║░░░██║░░░██╔══╝░░██╔═══╝░██╔══██║██╔══██╗░░░██║░░░░░╚██╔╝░░
+# ███████╗░░╚██╔╝░░╚█████╔╝░░░██║░░░███████╗██║░░░░░██║░░██║██║░░██║░░░██║░░░░░░██║░░░
+# ╚══════╝░░░╚═╝░░░░╚════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░
+#
+#
+#   Commands and permissions:
+#   - /vote » Open vote invenroy - zvoteparty.vote
+#   - /zvoteparty » Show needed votes for vote party (aliases: /vp, /voteparty) - zvoteparty.use
+#   - /zvoteparty reload » Reload configuration - zvoteparty.reload
+#   - /zvoteparty config » Open ingame configuration - zvoteparty.config
+#   - /zvoteparty version » Show plugin version
+#   - /zvoteparty help » Send commands description and syntax - zvoteparty.help
+#   - /zvoteparty add » Add vote to player - zvoteparty.add
+#   - /zvoteparty startparty » Force launch a Vote Party - zvoteparty.startparty
+#   
+#   Placeholders:
+#   - %zvoteparty_votes_recorded% » Returns the current amount of votes in the Vote Party.   
+#   - %zvoteparty_votes_required_party% » Returns the amount of votes left that are needed for a Vote Party to happen.
+#   - %zvoteparty_votes_required_total% » Returns the total amount of votes needed for a Vote Party to happen.
+#   - %zvoteparty_player_votes% » Returns the total amount of votes a player has.
+#   - %zvoteparty_votes_progressbar% » Return a progress bar for the vote party
+#   
+#   
+#########################################################################################################################################
+
+# Oy basina odul. Yuzdeler toplami 100 olmalidir.
+rewards:
+  1:
+    percent: 40
+    needToBeOnline: false
+    commands:
+      - "eco give %player% 750"
+    broadcast:
+      - "&b%player% &7oy verdi ve &a750 para &7kazandi. &8(/vote)"
+  2:
+    percent: 30
+    needToBeOnline: false
+    commands:
+      - "eco give %player% 1500"
+    broadcast:
+      - "&b%player% &7oy verdi ve &a1.500 para &7kazandi. &8(/vote)"
+  3:
+    percent: 20
+    needToBeOnline: true
+    commands:
+      - "crate give %player% vote 1"
+      - "eco give %player% 500"
+    broadcast:
+      - "&b%player% &7oy verdi ve &d1 Yorunge anahtari &7kazandi. &8(/vote)"
+  4:
+    percent: 10
+    needToBeOnline: true
+    commands:
+      - "crate give %player% vote 2"
+      - "eco give %player% 2500"
+    broadcast:
+      - "&8&m--------------------"
+      - "&b%player% &7buyuk odulu kazandi:"
+      - "&d2 Yorunge anahtari &7+ &a2.500 para"
+      - "&8&m--------------------"
+
+party:
+  # Vote party icin gereken toplam oy.
+  votes_needed: 50
+
+  # Party tetiklendiginde cevrimici her oyuncu icin calisir.
+  global_commands:
+    - "eco give %player% 2000"
+    - "crate give %player% vote 1"
+
+  # Konsolda bir kez calisir.
+  commands:
+    - "broadcast &d&lVOTE PARTY! &7Cevrimici herkes &d1 Yorunge anahtari &7+ &a2.000 para &7aldi."
+
+  Sound: UI_TOAST_CHALLENGE_COMPLETE:1:2
+
+  # Party sirasinda ek olarak rastgele verilen odul.
+  rewards:
+    1:
+      percent: 60
+      commands:
+        - "give %player% minecraft:diamond 3"
+    2:
+      percent: 40
+      commands:
+        - "crate give %player% tarım 1"
+
+#Database informations
+sql:
+  user: "homestead"
+  password: "secret"
+  port: 3306
+  host: "192.168.10.10"
+  database: "zvoteparty"         

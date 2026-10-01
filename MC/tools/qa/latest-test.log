@@ -1,0 +1,33 @@
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Existing Skyblock island detected
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Actual dungeon safe entrance tier 1: Location{world=CraftWorld{name=dungeon},x=-1.5,y=-60.0,z=15.5,pitch=0.0,yaw=0.0}
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Actual dungeon safe entrance tier 2: Location{world=CraftWorld{name=dungeon},x=-1.5,y=-60.0,z=31.5,pitch=0.0,yaw=0.0}
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Actual dungeon safe entrance tier 3: Location{world=CraftWorld{name=dungeon},x=-1.5,y=-60.0,z=46.5,pitch=0.0,yaw=0.0}
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Non-admin cannot issue keys
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Configured rewards validated
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: One key opens one crate
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Reward delivered synchronously
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Concurrent opening blocked
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Spent key cannot be reused
+[16:36:11] [Server thread/INFO]: [NovaProbe] PASS: Full inventory keeps key
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Cancelled protection interaction keeps key
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Offhand interaction cannot double-open
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Renamed fake key rejected
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Crate credits persistent Cosmos dust
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Vault money reward delivered
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Vault balance credited exactly once
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Oversized non-stackable reward rejected
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Higher tier locked initially
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Tier 2 unlocks at 15 kills
+[16:36:12] [Server thread/INFO]: [NovaProbe] PASS: Tier 3 unlocks at 40 kills
+[16:36:16] [Server thread/INFO]: [NovaProbe] PASS: Player entered dungeon through command
+[16:36:16] [Server thread/INFO]: [NovaProbe] PASS: Safe region-bounded dungeon spawning
+[16:36:16] [Server thread/INFO]: [NovaProbe] PASS: Nearby mob cap enforced
+[16:36:16] [Server thread/INFO]: [NovaProbe] PASS: Actual death event advances progression
+[16:36:16] [Server thread/INFO]: [NovaProbe] PASS: Boss death guarantees matching key
+[16:36:22] [Server thread/INFO]: [NovaProbe] PASS: Crystal, star and hologram exist at configured block
+[16:36:22] [Server thread/INFO]: [NovaProbe] PASS: Original anchor block preserved
+PASS: Real Minecraft client preview shift-click protection and dungeon menu gating.
+PASS: Boss dust increased persistent wallet by exactly 6.
+PASS: localhost:25565 → Velocity → Skyblock connection.
+PASS: AuthMe rejected /zindan before authentication.
+PASS: All three production crate anchor blocks exist.

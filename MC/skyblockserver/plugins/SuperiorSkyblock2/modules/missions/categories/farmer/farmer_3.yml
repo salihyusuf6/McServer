@@ -1,0 +1,94 @@
+######################################################
+##  Nova Skyblock - Ciftci III
+######################################################
+
+mission-file: FarmingMissions
+auto-reward: true
+reset-after-finish: true
+
+required-missions:
+  - 'farmer_2'
+
+rewards:
+  commands:
+    - 'eco give %player% 15000'
+    - 'is admin msg %player% &b&lNOVA &8» &7Ciftci III gorevini tamamladin!'
+    - 'is admin msg %player% &b&lNOVA &8» &7Kaktus ve bambu bakim istemez; otomasyona uygundur.'
+    - 'is admin msg %player% &b&lNOVA &8» &7Butun gorevler: &f/is missions'
+
+required-plants:
+  '1':
+    types:
+      - 'MELON'
+    amount: 256
+  '2':
+    types:
+      - 'PUMPKIN'
+    amount: 128
+
+icons:
+  locked:
+    type: PAPER
+    name: '&aCiftci III'
+    lore:
+      - 'Buyuk tarlalara gec.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x256 Karpuz'
+      - '&8 - &7x128 Bal Kabagi'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &715.000 para'
+      - ''
+      - '&6Hasat Karpuz: &7{value_melon}/256'
+      - '&6Hasat Bal Kabagi: &7{value_pumpkin}/128'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Kilitli &8(once Ciftci II)'
+  not-completed:
+    type: PAPER
+    name: '&aCiftci III'
+    lore:
+      - 'Buyuk tarlalara gec.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x256 Karpuz'
+      - '&8 - &7x128 Bal Kabagi'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &715.000 para'
+      - ''
+      - '&6Hasat Karpuz: &7{value_melon}/256'
+      - '&6Hasat Bal Kabagi: &7{value_pumpkin}/128'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Tamamlanmadi'
+  can-complete:
+    type: PAPER
+    name: '&aCiftci III'
+    lore:
+      - 'Buyuk tarlalara gec.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x256 Karpuz'
+      - '&8 - &7x128 Bal Kabagi'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &715.000 para'
+      - ''
+      - '&6Hasat Karpuz: &7256/256'
+      - '&6Hasat Bal Kabagi: &7128/128'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odulu almak icin tikla.'
+    glow: true
+  completed:
+    type: MAP
+    name: '&aCiftci III'
+    lore:
+      - 'Buyuk tarlalara gec.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &715.000 para'
+      - ''
+      - '&6Hasat Karpuz: &7256/256'
+      - '&6Hasat Bal Kabagi: &7128/128'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odul alindi.'

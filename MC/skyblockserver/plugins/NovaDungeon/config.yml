@@ -1,0 +1,64 @@
+world: nova_dungeon
+generated-world: true
+require-island: true
+spawning:
+  global-cap: 48
+  nearby-cap: 5
+rewards:
+  key-chance: 0.04
+tiers:
+  1:
+    name: 'Ay Harabeleri'
+    unlock-kills: 0
+    mob: ZOMBIE
+    mob-name: 'Ay Gezgini'
+    health: 24
+    damage: 3
+    speed: 0.21
+    dust: 1
+    crate: vote
+  2:
+    name: 'Meteor Geçidi'
+    unlock-kills: 15
+    mob: HUSK
+    mob-name: 'Meteor Yağmacısı'
+    health: 42
+    damage: 4
+    speed: 0.22
+    dust: 2
+    crate: tarım
+  3:
+    name: 'Boşluk Tapınağı'
+    unlock-kills: 40
+    mob: SKELETON
+    mob-name: 'Boşluk Okçusu'
+    health: 64
+    damage: 6
+    speed: 0.23
+    dust: 3
+    crate: novacraft
+  4:
+    name: 'Buzul Yörüngesi'
+    unlock-kills: 75
+    mob: STRAY
+    mob-name: 'Buzul Avcısı'
+    health: 96
+    damage: 8
+    speed: 0.24
+    dust: 4
+    crate: novacraft
+  5:
+    name: 'Yıldız Çekirdeği'
+    unlock-kills: 120
+    mob: WITHER_SKELETON
+    mob-name: 'Çekirdek Celladı'
+    health: 140
+    damage: 11
+    speed: 0.25
+    dust: 5
+    crate: novacraft
+
+math-quiz:
+  enabled: true
+  interval-seconds: 300
+  answer-seconds: 30

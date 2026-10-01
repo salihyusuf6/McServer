@@ -1,0 +1,75 @@
+# NovaRewards - sadakat ve ilerleme odulleri.
+# %player% oyuncunun adiyla degistirilir. Komutlar konsolda calisir.
+
+gunluk:
+  enabled: true
+  # Gun serisi bozulunca 1. gunden baslar.
+  seri-bozulunca-sifirla: true
+  # 7. gunden sonra seri devam eder, odul 7. gunun odulu olur.
+  oduller:
+    1:
+      para: 1500
+      komutlar: []
+      aciklama: '1.500 para'
+    2:
+      para: 2500
+      komutlar: []
+      aciklama: '2.500 para'
+    3:
+      para: 3500
+      komutlar: ['crate give %player% vote 1']
+      aciklama: '3.500 para + 1 Yörünge anahtarı'
+    4:
+      para: 5000
+      komutlar: []
+      aciklama: '5.000 para'
+    5:
+      para: 7500
+      komutlar: ['crate give %player% tarım 1']
+      aciklama: '7.500 para + 1 Yıldız Hasadı anahtarı'
+    6:
+      para: 10000
+      komutlar: []
+      aciklama: '10.000 para'
+    7:
+      para: 20000
+      komutlar: ['crate give %player% novacraft 1']
+      aciklama: '20.000 para + 1 Süpernova anahtarı'
+
+oynama-odulleri:
+  enabled: true
+  # Her bu kadar dakikalik aktif oyun sonunda odul verilir.
+  aralik-dakika: 30
+  para: 1000
+  komutlar: []
+
+rankup:
+  enabled: true
+  # Sirayla yukselir. 'komutlar' LuckPerms grubunu EKLER (parent add).
+  # Onceki rutbe grubu eklenti tarafindan otomatik kaldirilir; kurucu/vip gibi
+  # diger gruplar korunur. Gruplar ve kalitim zinciri kurulmustur.
+  rutbeler:
+    - id: tas
+      ad: '&7Taş'
+      fiyat: 25000
+      komutlar: ['lp user %player% parent add tas']
+    - id: demir
+      ad: '&fDemir'
+      fiyat: 100000
+      komutlar: ['lp user %player% parent add demir']
+    - id: altin
+      ad: '&6Altın'
+      fiyat: 350000
+      komutlar: ['lp user %player% parent add altin']
+    - id: elmas
+      ad: '&bElmas'
+      fiyat: 1000000
+      komutlar: ['lp user %player% parent add elmas']
+    - id: zumrut
+      ad: '&aZümrüt'
+      fiyat: 3000000
+      komutlar: ['lp user %player% parent add zumrut']
+    - id: nova
+      ad: '&d&lNOVA'
+      fiyat: 10000000
+      komutlar: ['lp user %player% parent add nova', 'broadcast &d%player% &7NOVA rütbesine ulaştı!']

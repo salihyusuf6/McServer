@@ -1,0 +1,20 @@
+dust: 0
+started: true
+day: '2026-09-13'
+delivery:
+  gear: ''
+  id: ''
+event:
+  id: ''
+  count: 0
+  claimed: false
+daily:
+  '0':
+    count: 0
+    claimed: false
+  '1':
+    count: 0
+    claimed: false
+  '2':
+    count: 0
+    claimed: false

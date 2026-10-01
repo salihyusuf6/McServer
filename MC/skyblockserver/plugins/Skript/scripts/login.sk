@@ -1,0 +1,33 @@
+import:
+    fr.xephi.authme.events.LoginEvent
+    fr.xephi.authme.events.RegisterEvent
+
+options:
+    loginWorld: MainLobby
+    mainWorld: world
+
+# Oyuncu girince login lobisine at
+on join:
+    wait 1 tick
+    teleport player to location(0.5, 70, 0.5, world "{@loginWorld}", 0, 0)
+    send "&eGiriş yapmak için /login veya /register kullan!"
+
+# Login olunca
+on LoginEvent:
+    set {_p} to event.getPlayer()
+    wait 5 ticks
+    if {_p} is online:
+        teleport {_p} to location(218.940, 140, 1428.949, world "{@mainWorld}", 180, 0.2)
+        set fall distance of {_p} to 0
+        heal {_p}
+        send "&aGiriş başarılı! Ana dünyaya gönderildin." to {_p}
+
+# Register olunca
+on RegisterEvent:
+    set {_p} to event.getPlayer()
+    wait 5 ticks
+    if {_p} is online:
+        teleport {_p} to location(218.940, 140, 1428.949, world "{@mainWorld}", 180, 0.2)
+        set fall distance of {_p} to 0
+        heal {_p}
+        send "&aKayıt başarılı! Ana dünyaya gönderildin." to {_p}

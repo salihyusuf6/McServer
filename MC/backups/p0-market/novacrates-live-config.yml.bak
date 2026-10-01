@@ -1,0 +1,36 @@
+crates:
+  vote:
+    display: '&b✦ Yörünge Kasası'
+    key-name: '&bYörünge Anahtarı'
+    visual-material: DIAMOND_BLOCK
+    rewards:
+      - 'ITEM:IRON_INGOT:16:35'
+      - 'ITEM:DIAMOND:2:20'
+      - 'MONEY:500:25'
+      - 'DUST:12:20'
+  tarım:
+    display: '&a✦ Yıldız Hasadı Kasası'
+    key-name: '&aYıldız Hasadı Anahtarı'
+    visual-material: EMERALD_BLOCK
+    rewards:
+      - 'ITEM:GRASS_BLOCK:32:30'
+      - 'ITEM:BONE_MEAL:32:25'
+      - 'ITEM:IRON_INGOT:24:20'
+      - 'MONEY:1000:15'
+      - 'DUST:20:10'
+  novacraft:
+    display: '&d✦ Süpernova Kasası'
+    key-name: '&dSüpernova Anahtarı'
+    visual-material: AMETHYST_BLOCK
+    rewards:
+      - 'ITEM:DIAMOND:6:30'
+      - 'ITEM:EMERALD:8:25'
+      - 'MONEY:2000:25'
+      - 'DUST:35:18'
+      - 'ITEM:NETHERITE_INGOT:1:2'
+
+crate-locations:
+  
+  vote: world,256,138,1408
+  tarım: world,256,138,1414
+  novacraft: world,256,139,1411

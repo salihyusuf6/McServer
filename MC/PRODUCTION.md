@@ -1,0 +1,113 @@
+# Nova Skyblock — production hazırlığı
+
+Bu dosya sunucuyu gerçek oyuncuya açmadan önceki durumu, yapılanları ve
+senin tamamlaman gereken adımları tutar. Oyun içi sistemler `OYNA.md` içindedir.
+
+## 1. Yapılan ayarlar
+
+### Kapasite ve başarım
+| Ayar | Eski | Yeni | Neden |
+|---|---|---|---|
+| `max-players` | 20 | 100 | Gerçek kapasite |
+| `view-distance` | 10 | 8 | Çok oyuncuda chunk yükü |
+| `simulation-distance` | 10 | 6 | Tick maliyetinin ana kaynağı |
+| `network-compression-threshold` | 256 | -1 | Proxy aynı makinede; sıkıştırma boşa CPU |
+| `sync-chunk-writes` | true | false | Ana thread'i disk beklemesinden kurtarır |
+| `pause-when-empty-seconds` | 60 | 0 | Proxy arkasında duraklama giriş gecikmesi yapar |
+| `difficulty` | easy | normal | Canavar/ganimet dengesi (oyun kararı, geri alınabilir) |
+| `spawn-limits.monsters` | 70 | 60 | Çok oyunculu TPS |
+
+Paper (`config/paper-world-defaults.yml`):
+- `hopper.disable-move-event: true` — çok hunili adalarda en büyük TPS kazancı.
+- `armor-stands.tick: false`, `do-collision-entity-lookups: false` — minyon NPC'leri hareketsiz.
+- `alt-item-despawn-rate` açık: cobblestone/stone/netherrack/dirt/sand/gravel 15 saniyede kaybolur.
+- `redstone-implementation: ALTERNATE_CURRENT` — büyük redstone çiftlikleri için.
+- `treasure-maps.enabled: false` — Skyblock'ta işe yaramaz, tik donması yapar.
+
+JVM (`tools/serverctl.py`): Paper artık Aikar G1GC bayraklarıyla, `-Xms3G -Xmx3G` sabit heap ile açılıyor.
+Proxy 512 MB'de kalıyor.
+
+Velocity (`a/velocity.toml`): `kick-existing-players = true` — hayalet oturum kalmaz.
+
+### Ada değeri (jeneratör sorunu)
+Jeneratör bloğu kırılınca ada seviyesinin sürekli düşmesinin nedeni: SSB2'nin jeneratör
+modülü `BlockFormEvent`'i kendi işliyor, blok sayacı ise yalnız kırılmayı görüyordu.
+Sonsuz üretilebilen blokların ada değeri **0** yapıldı:
+`COBBLESTONE, STONE, NETHERRACK, OBSIDIAN, CACTUS, SUGAR_CANE_BLOCK, ICE, PACKED_ICE, SNOW_BLOCK`.
+Ayrıca `negative-worth` ve `negative-level` kapatıldı; değer artık eksiye düşemez.
+Değerli blokların değeri market satış fiyatına eşitlendi (ör. elmas bloğu 540, netherite bloğu
+22.500), spawner (her tür) 5.000, beacon 5.000; seviye formülü `değer / 100`.
+Mevcut adalar `/is admin recalc *` ile yeniden hesaplandı.
+
+Ada değeri artık **yerleştirilen bloklardan** gelir (cevher blokları, spawner, beacon) —
+sonsuz jeneratör çıktısından değil.
+
+### Yetkiler
+- `kurucu`: `*` (sunucu OP eşdeğeri), ağırlık 1000, ön ek `&4&lKURUCU`.
+- Rütbe yolu (`lp track rutbe`): `tas → demir → altin → elmas → zumrut → nova`, her biri
+  bir öncekinin yetkilerini devralır, `tas` da `default`'u devralır.
+- Ayrıcalıklar: Taş `/back` `/workbench`; Demir `/enderchest` `/hat`; Altın `/feed` `/repair` `/near`;
+  Elmas `/nick` + ada uçuşu; Zümrüt `/heal` `/ptime`; NOVA `/fly` `/speed`.
+  Ev hakkı 3 → 4 → 5 → 6 → 8 → 10 → 15 olarak kademelendi.
+- `vip` Demir seviyesini devralır, ön eki `&e&lVIP`.
+- `/rankup` artık `parent add` kullanır ve yalnız önceki rütbe grubunu alır; `kurucu`/`vip`
+  üyeliği silinmez.
+
+### Yedekleme
+`python3 tools/backup.py` — sunucu açıkken `save-off` + `save-all flush` ile tutarlı snapshot
+alır, `backups/snapshots/nova-<tarih>.tar.gz` yazar, son 7 snapshot'ı saklar (`--keep N`).
+Jar, log ve cache dosyaları yedeğe girmez. Listeleme: `python3 tools/backup.py --list`.
+
+Günlük otomatik yedek için (örnek, saat 05:00):
+```sh
+crontab -e
+0 5 * * * cd /Users/omentonrem/Desktop/MC && /usr/bin/python3 tools/backup.py --keep 7 >> run/backup.log 2>&1
+```
+
+## 2. Senin tamamlaman gerekenler
+
+1. **Alan adı ve port**: Velocity `0.0.0.0:25565` dinliyor. Modem/router'da 25565 TCP
+   yönlendirilmeli; alan adına A kaydı veya SRV kaydı açılmalı.
+2. **Kaynak paketi**: `plugins/NovaCosmos/config.yml` içindeki
+   `http://127.0.0.1:8088/novacosmos.zip` dışarıdan erişilebilir bir adrese taşınmalı,
+   `sha1` alanı doldurulmalı. Aksi halde dış oyuncular paketi indiremez.
+3. **Oy (Votifier)**: `plugins/Votifier/config.yml` içindeki jeton oy sitelerine girilmeli;
+   Votifier'ın dinlediği adres (`127.0.0.1:8192`) dışarıdan erişilebilir olmalı.
+4. **Yedeğin kopyası**: `backups/snapshots` aynı diskte. Haftada bir dış diske/bulut'a kopyala.
+5. **OP listesi**: `skyblockserver/ops.json` gözden geçir. LuckPerms `kurucu` grubu OP'ye
+   gerek bırakmıyor; ekibi `lp user <ad> parent add kurucu` ile gruba al, OP'yi kaldır.
+6. **EssentialsX**: 2.21.2 bu Paper sürümü için "unsupported" uyarısı veriyor; 2.22.0 mevcut.
+   Güncellemeden önce yedek al ve test et.
+7. **AuthMe GeoIP**: `GeoLite2-Country.mmdb` eksik; yalnız ülke kaydı için gerekli, giriş çalışıyor.
+
+## 3. Offline-mod uyum ayarları (uygulandı)
+
+Sunucu Mojang doğrulaması yerine AuthMe parolası + Velocity modern forwarding kullanıyor
+(`online-mode=false`, mevcut mimari). Bu kurulumun gerektirdiği ayarlar onayla uygulandı:
+
+| Ayar | Eski | Yeni | Neden |
+|---|---|---|---|
+| `enforce-secure-profile` | true | false | Offline modda Mojang imzalı sohbet profili doğrulanamaz; true iken giriş/sohbet kopar |
+| `velocity.toml → force-key-authentication` | true | false | Aynı sebep: istemci oturum anahtarı doğrulanamaz |
+| `bukkit.yml → connection-throttle` | 4000 | -1 | Proxy arkasında tüm girişler 127.0.0.1'den gelir; kısıt gerçek oyuncuları reddediyordu |
+| `allow-flight` | false | true | Elmas/NOVA rütbelerindeki ada uçuşu ve `/fly` için |
+| `management-server-secret` | dolu | boş | Servis kapalı; dosyada düz metin sır durmasın |
+
+Kimlik doğrulaması bunlardan etkilenmez: oyuncu hâlâ AuthMe parolasıyla giriş yapar ve
+backend yalnız `forwarding.secret` ile imzalanmış proxy bağlantılarını kabul eder.
+Bu yüzden **backend 127.0.0.1'de kalmalı** ve 25566 portu dışarı açılmamalıdır.
+
+## 4. Günlük operasyon
+
+```sh
+python3 tools/serverctl.py start      # ağı başlat
+python3 tools/serverctl.py status     # süreç + iki port
+python3 tools/serverctl.py console skyblock <komut>
+python3 tools/serverctl.py stop       # dünyaları kaydederek kapat
+python3 tools/backup.py               # snapshot
+```
+
+- Günlükler: `run/skyblock.log`, `run/proxy.log`, `run/manager.log`. Bunlar **döndürülmüyor**;
+  büyürse elle arşivle veya `newsyslog`/`logrotate` kur.
+- Ayar değişikliğinden sonra normal kapat/aç yap; `/reload` kullanma.
+- Günde bir kez planlı yeniden başlatma (örn. 06:00) bellek ve entity birikimini temizler.

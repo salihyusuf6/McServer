@@ -1,0 +1,14 @@
+name: NovaCrates
+version: '1.1.0'
+main: org.nova.novaCrates.NovaCrates
+api-version: '1.20'
+depend: [Vault, NovaCosmos]
+softdepend: [Essentials, NovaEconomy, Multiverse-Core, AuthMe]
+description: Kristal kasalar, anahtarlar ve Skyblock ödülleri.
+commands:
+  crate:
+    description: Nova kasaları
+    aliases: [kasa]
+permissions:
+  novacrates.admin:
+    default: op

@@ -1,0 +1,37 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: ''
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1789889402437
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1789889626108
+  login: 0
+money: '9999900284920.0'
+lastlocation:
+  world: ebac5ec1-ecef-4853-89b4-bafbf4aca148
+  world-name: SuperiorWorld
+  x: 608.3702439827618
+  y: 100.0
+  z: -604.0329704113157
+  yaw: 86.99542236328125
+  pitch: 26.856319427490234
+logoutlocation:
+  world: ebac5ec1-ecef-4853-89b4-bafbf4aca148
+  world-name: SuperiorWorld
+  x: 597.8861080670023
+  y: 100.0
+  z: -597.9429882825888
+  yaw: 135.4495086669922
+  pitch: 34.94982147216797

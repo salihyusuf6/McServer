@@ -1,0 +1,89 @@
+######################################################
+##  Nova Skyblock - Madenci IV
+######################################################
+
+mission-file: BlocksMissions
+auto-reward: true
+reset-after-finish: true
+only-natural-blocks: true
+
+required-missions:
+  - 'miner_3'
+
+rewards:
+  commands:
+    - 'eco give %player% 30000'
+    - 'is admin rankup %player% generator-rates'
+    - 'is admin msg %player% &b&lNOVA &8» &7Madenci IV gorevini tamamladin!'
+    - 'is admin msg %player% &b&lNOVA &8» &7Son madenci gorevi icin zumrut ve elmas gerekiyor.'
+    - 'is admin msg %player% &b&lNOVA &8» &7Butun gorevler: &f/is missions'
+
+required-blocks:
+  '1':
+    types:
+      - 'DIAMOND_ORE'
+    amount: 64
+
+icons:
+  locked:
+    type: PAPER
+    name: '&aMadenci IV'
+    lore:
+      - 'Elmas damarlarini bosalt.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x64 Elmas Cevheri'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &730.000 para'
+      - '&8 - &7Jeneratör yükseltmesi'
+      - ''
+      - '&6Kazilan Elmas Cevheri: &7{value_diamond_ore}/64'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Kilitli &8(once Madenci III)'
+  not-completed:
+    type: PAPER
+    name: '&aMadenci IV'
+    lore:
+      - 'Elmas damarlarini bosalt.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x64 Elmas Cevheri'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &730.000 para'
+      - '&8 - &7Jeneratör yükseltmesi'
+      - ''
+      - '&6Kazilan Elmas Cevheri: &7{value_diamond_ore}/64'
+      - '&6Ilerleme: &7{0}%'
+      - '&c&l ✘ &7Tamamlanmadi'
+  can-complete:
+    type: PAPER
+    name: '&aMadenci IV'
+    lore:
+      - 'Elmas damarlarini bosalt.'
+      - ''
+      - '&6Gerekenler:'
+      - '&8 - &7x64 Elmas Cevheri'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &730.000 para'
+      - '&8 - &7Jeneratör yükseltmesi'
+      - ''
+      - '&6Kazilan Elmas Cevheri: &764/64'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odulu almak icin tikla.'
+    glow: true
+  completed:
+    type: MAP
+    name: '&aMadenci IV'
+    lore:
+      - 'Elmas damarlarini bosalt.'
+      - ''
+      - '&6Oduller:'
+      - '&8 - &730.000 para'
+      - '&8 - &7Jeneratör yükseltmesi'
+      - ''
+      - '&6Kazilan Elmas Cevheri: &764/64'
+      - '&6Ilerleme: &7100%'
+      - '&a&l ✔ &7Odul alindi.'

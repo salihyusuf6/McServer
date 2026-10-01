@@ -1,0 +1,2 @@
+on first join:
+    execute console command "lp user %player% parent add yesil"

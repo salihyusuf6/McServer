@@ -1,0 +1,12 @@
+name: NovaCrates
+version: '1.0-SNAPSHOT'
+main: org.nova.novaCrates.NovaCrates
+api-version: '1.20'
+description: Npc manager
+website: https://info.novasmartschool.com
+
+commands:
+  cratekey:
+    description: key verir
+  crate:
+    description: crate ayarla

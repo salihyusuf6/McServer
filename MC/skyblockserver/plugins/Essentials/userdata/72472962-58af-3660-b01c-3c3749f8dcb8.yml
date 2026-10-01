@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 78.164.31.37
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1775763412974
+  login: 1775763401208
+money: '1001000.0'
+last-account-name: artsyes
+logoutlocation:
+  world: 1596d067-dc15-4ff9-8155-448f594637f8
+  world-name: MainLobby
+  x: 0.5
+  y: 70.0
+  z: 0.5
+  yaw: 2.7751030921936035
+  pitch: 4.646683692932129

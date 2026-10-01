@@ -1,0 +1,20 @@
+# Paper 1.20.4. Tüm süreler saniye cinsindendir.
+events:
+  enabled: true
+  interval-seconds: 5400
+  duration-seconds: 900
+  reward: 45
+  mining-target: 96
+  combat-target: 20
+  farming-target: 64
+daily:
+  mining-target: 128
+  combat-target: 24
+  farming-target: 96
+  reward: 35
+# Bu dünyalarda oyuncunun kendi adası dışında da savaş görevi sayılır.
+combat-worlds: [dungeon]
+# Paket ZIP'i herkese açık HTTPS adresine yüklenirse /uzay paket ve girişte gönderilir.
+resource-pack:
+  url: ''
+  sha1: ''

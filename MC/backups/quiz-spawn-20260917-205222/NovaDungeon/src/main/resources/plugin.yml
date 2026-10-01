@@ -1,0 +1,17 @@
+name: NovaDungeon
+version: '1.2.0'
+main: org.nova.novaDungeon.NovaDungeon
+api-version: '1.20'
+depend: [WorldGuard, NovaCosmos, NovaCrates]
+softdepend: [Multiverse-Core]
+description: Skyblock ile bağlantılı beş aşamalı Yıldız Zindanı.
+commands:
+  zindan:
+    description: Yıldız zindanı, bölgeler ve dönüş
+    aliases: [dungeon]
+  dungeonadmin:
+    description: Zindan girişlerini ve durumunu yönet
+    permission: novadungeon.admin
+permissions:
+  novadungeon.admin:
+    default: op

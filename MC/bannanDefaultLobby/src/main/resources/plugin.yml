@@ -1,0 +1,22 @@
+name: bannanDefaultLobby
+version: '1'
+main: com.Bannan.bannanDefaultLobby.BannanDefaultLobby
+api-version: '1.20'
+load: STARTUP
+description: Default lobby plugin for BannanMC
+commands:
+  login:
+    description: Login and unlock your player.
+    usage: /login <password>
+    aliases:
+      - l
+      - L
+      - Login
+  game:
+    description: Spawns the gamemode selector NPC.
+    usage: /game
+    permission: bannanDefaultLobby.game
+permissions:
+  bannanDefaultLobby.game:
+    description: Allows spawning the gamemode selector NPC.
+    default: op

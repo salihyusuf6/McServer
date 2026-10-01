@@ -1,0 +1,161 @@
+# Nova Skyblock — oynanabilir yerel sunucu
+
+Minecraft Java **1.20.4** ile **localhost:25565** adresine bağlan.
+`Nova-Baslat.command` ağı başlatır; `Nova-Durdur.command` dünyaları kaydederek kapatır.
+Aynı anda eski `start-cosmos.sh`, başka bir Paper/Velocity veya ikinci sunucu açma.
+Sunucuya ayrılan üst bellek: Paper 3 GB, proxy 512 MB.
+
+## İlk oyun
+
+1. AuthMe'nin gösterdiği `/register` veya `/login` komutuyla giriş yap.
+2. `/is` ile ada oluştur. Menü gerekirse `/is create AdaAdi normal` kullan.
+3. `/uzay baslangic` ile bir kez 25 Yıldız Tozu al; `/uzay` menüsünden Ay Kazması üret.
+4. Adanda üretim yap, günlük görevlerle toz kazan, silah ve yiyecek hazırla.
+5. `/zindan` menüsünden Ay Harabeleri'ne gir. Komutla: `/zindan gir 1`.
+6. Avdan kazandığın tozu `/uzay` menüsünde ekipmana dönüştür; anahtarları spawn kasalarında kullan.
+7. `/zindan cik` geldiğin güvenli konuma döndürür. Işınlanma üç saniye sürer; hareket veya hasar iptal eder.
+
+`/uzay` menüsündeki kılıç ve kasa düğmeleri ilgili sistemlere ulaşır.
+Zindan için adan ve hayatta kalma modu gerekir. Ölümde zindan envanterin ve seviyen korunur;
+normal Skyblock dünyalarının ölüm kuralları değişmez. Zindanda PvP kapalıdır.
+
+## Beş bölgeli zindan dünyası
+
+Yeni dünya **nova_dungeon**; eski `dungeon` haritası korunur. `/zindan gir` güvenli merkeze götürür.
+Düz beyaz yolu ve köprüleri takip ederek beş alanda ilerle. `/zindan gir 1` gibi komutlarla
+kilidini açtığın bölgeye doğrudan gidebilirsin. `/zindan merkez` merkeze, `/zindan cik` geldiğin yere döndürür.
+
+| Bölge | Açılış | Yaratık | Can | Temel hasar | Toz |
+|---|---:|---|---:|---:|---:|
+| 1 · Ay Harabeleri | 0 av | Zombi | 24 | 3 | 1 |
+| 2 · Meteor Geçidi | 15 av | Çöl zombisi | 42 | 4 | 2 |
+| 3 · Boşluk Tapınağı | 40 av | İskelet okçu | 64 | 6 | 3 |
+| 4 · Buzul Yörüngesi | 75 av | Buz iskeleti | 96 | 8 | 4 |
+| 5 · Yıldız Çekirdeği | 120 av | Wither iskeleti | 140 | 11 | 5 |
+
+Can/hasar değerleri Minecraft puanlarıdır; 2 can puanı bir kalptir. Zırh alınan hasarı azaltır.
+Her alan 49×49 bloktur; renkli geçitler, aydınlatma, sütunlar, siperler ve seviye yazıları bulunur.
+Merkez ve köprüler canavar doğurmayan geçiş alanlarıdır. Kilitli bölgelere yürüyerek veya
+ışınlanarak geçiş engellenir; yönetici geçiş yetkisi bunu aşabilir. Boşluğa düşen oyuncu merkeze alınır.
+
+Her 12 avlık eşiğin ardından müsait alan varsa muhafız doğar: bölge yaratığının üç kat canı,
+altı kat toz ödülü ve garantili anahtarı vardır. Normal avlarda anahtar olasılığı %4'tür.
+Bölge 1 Yörünge, bölge 2 Yıldız Hasadı, bölge 3–5 Süpernova anahtarı verir.
+Dolu çantada anahtar sahibine atanarak ayağının altına düşer; oradan al.
+Muhafızın işaretlediği alandan uzaklaş: 1,25 saniye sonra darbe gelir.
+
+Av sayısı korunur; önceki zindandaki ilerleme yeni dünyada da geçerlidir. Toz mevcut NovaCosmos
+cüzdanına eklenir. Günlük savaş görevleri ve ekipman yetenekleri yeni dünyada da çalışır.
+Yakında 5, toplamda 48 canavar sınırı vardır; üç dakika sonra ya da kendi bölgesinden çıkınca temizlenir.
+
+Harita ilk açılışta parçalara bölünerek oluşturulur. Hazır olana kadar giriş açılmaz.
+Sonraki açılışlarda harita yeniden çizilmez; yönetici düzenlemeleri korunur.
+`plugins/NovaDungeon/map-v1.ready` haritanın tamamlandığını belirtir. Harita dosyası ile bu
+kayıt birlikte yedeklenmelidir. Aynı isimli, eklentiye ait olmayan dünyaya yazılmaz.
+
+## Sohbet matematik yarışması
+
+Sunucu açıkken çevrimiçi oyuncular varsa **5 dakikada bir** toplama, çıkarma, çarpma
+veya tam bölme sorusu sorulur. İlk soru açılıştan yaklaşık bir dakika sonra gelir.
+Cevap süresi **30 saniyedir**; cevabı normal sohbete yalnız sayı olarak yaz.
+İlk doğru cevap **1 vote anahtarı + 5 Yıldız Tozu** kazanır. Yanlış veya sonraki cevaplar ödül vermez.
+
+Çanta doluysa toz cüzdana eklenir, anahtar bekler. Yer açıp `/matematik teslim` yaz;
+bekleyen ödül yeniden girişte de denenir. Aynı ödülün tozu tekrar verilmez.
+Süre dolduğunda doğru cevap gösterilir; ödül verilmez.
+`/matematik` aktif soruyu gösterir. Yetkili: `/matematik baslat`.
+Aralık ve süre `plugins/NovaDungeon/config.yml` içindeki `math-quiz` bölümündedir.
+
+Üst bölge doğum kontrolleri: normal oyuncular için av sınırları korunur. `novadungeon.admin`
+yetkilileri Survival modunda her bölgeye girip o bölgenin yaratıklarıyla karşılaşabilir.
+Creative/Spectator oyuncuları canavar doğurtmaz. `/dungeonadmin durum`, mevcut bölgeyi,
+oyun modunu, av sayısını ve otomatik doğuma uygunluğu gösterir.
+
+## Kristal kasalar
+
+Mevcut ana bloklar korunur; üzerinde dönen kristal, yıldız, parçacık halkası ve yazı görünür.
+Bu tasarım için ek kaynak paketi gerekmez. Var olan Cosmos silah modelleri kendi paketini kullanır.
+
+| Kimlik | Tasarım | Ana blok — world |
+|---|---|---|
+| vote | Turkuaz / elmas kristali | 256, 138, 1408 |
+| tarım | Yeşil / zümrüt kristali | 256, 138, 1414 |
+| novacraft | Mor / ametist kristali | 256, 139, 1411 |
+
+**Ana bloğa sağ tık:** anahtar tüketerek aç. **Sol tık:** ödül/olasılık önizlemesi.
+`/crate preview vote` gibi komutlarla uzaktan önizlenebilir.
+
+Ödüller ada ekonomisine göre düzenlendi; eski 50.000–100.000 para veren tarım ödülleri yerine
+üretim malzemeleri, 1.000 para veya 20 toz bulunur. Tam ödül ağırlıkları
+`skyblockserver/plugins/NovaCrates/config.yml` içindedir; önizleme gerçek normalize olasılıkları gösterir.
+
+Ödül açılışta teslim edilir, animasyon yalnız sunumdur. Menüyü kapatmak/bağlantıyı kesmek
+ikinci ödül vermez ve animasyonun bitmesini bekleyen bir teslimat bırakmaz.
+Dolu çantada anahtar tüketilmez. Para/toz sağlayıcısı hata döndürürse anahtar geri korunur.
+Oyuncu başına aynı anda bir açılış vardır; çift el olayı yalnız bir kez işlenir.
+Sahte isimli anahtarlar, önizlemeden eşya alma ve yetkisiz anahtar verme engellenir.
+
+## Yönetim
+
+Yalnız OP veya `novacrates.admin` / `novadungeon.admin` yetkilileri kullanabilir:
+
+```text
+/crate set vote                    # Baktığın bloğu Yörünge kasası yap
+/crate give Oyuncu vote 1          # 1–64 anahtar ver; konsoldan da kullanılabilir
+/crate remove vote                # Tasarımı/konumu kaldır; ana bloğa dokunma
+/dungeonadmin durum               # Beş bölgenin güvenli girişlerini göster
+/dungeonadmin setspawn 1          # İlgili bölgede durarak özel giriş kaydet
+```
+
+Kasalar kırılma, patlama ve piston taşınmasına karşı korunur; önce `/crate remove` kullan.
+Ayar değişikliklerinden sonra normal kapat/aç yap. `/reload` kullanma.
+
+```sh
+python3 tools/serverctl.py start
+python3 tools/serverctl.py status
+python3 tools/serverctl.py console skyblock dungeonadmin durum
+python3 tools/serverctl.py stop
+```
+
+Yerel konsol kanalı yalnız bu kullanıcı hesabının erişebildiği bir Unix socket'tir.
+Ağ yöneticisi bir servis kapanırsa diğerini de kapatır. Kapanış sırasında tekrar başlatma;
+`status` çıktısında süreç ve iki port kapalı olmalıdır. Günlükler `run/skyblock.log`,
+`run/proxy.log`, `run/manager.log` ve sunucuların kendi `logs/` dizinlerindedir.
+
+## Kurulum değişiklikleri
+
+- NovaCosmos, NovaCrates ve NovaDungeon yeni JAR'ları ana sunucuya kuruldu.
+- Varsayılan Velocity girişi doğrudan Skyblock'a gider; mevcut AuthMe kayıt/giriş koruması devam eder.
+- Eski ayrı lobi ve örnek Flask giriş servisi bu oyun yolu için gerekmez; kaynakları silinmedi.
+- Paper modern Velocity forwarding açıldı, eski BungeeCord forwarding kapatıldı.
+  Mevcut ortak gizli anahtar korundu; backend 127.0.0.1 üzerinde kalır.
+- SkBee'nin Skript ile çakışan display-entity modülü kapatıldı; mevcut scriptler bu modülü kullanmıyor.
+- Dosyası olmayan TEST dünyasının otomatik yüklemesi kapatıldı.
+- Kaynak ve önceki JAR/ayar yedekleri `backups/` altında tutulur.
+
+Forwarding ayarları [PaperMC'nin resmi yapılandırması](https://docs.papermc.io/velocity/player-information-forwarding/)
+ile eşleştirildi. Paper Java 17, kurulu Velocity derlemesi Java 25 ile çalıştırılır.
+
+## Kontroller ve sınırlar
+
+`python3 tools/build_playable.py` yereldeki mevcut API JAR'larıyla üç eklentiyi derler,
+Cosmos kayıt/ödül testlerini çalıştırır. Harici indirme gerekmez.
+`tools/qa/` içindeki probe yalnız `NovaCosmos/target/test-server` içindir;
+**NovaProbe.jar ana sunucuya kurulmaz.** Test portu 127.0.0.1:25585'tir.
+
+Gerçek Minecraft protokolüyle kasa menüsü, Shift-tıklama koruması, anahtar tüketimi,
+sahte anahtar, dolu çanta, yetki reddi, çift el, koruma iptali, bölge kilitleri,
+gerçek canavar ölümü, muhafız anahtarı, kalıcı toz, giriş/çıkış ve tasarım varlıkları sınandı.
+Son kontrol çıktısı `tools/qa/latest-test.log` içinde tutulur.
+Grafik Minecraft istemcisiyle görsel kabul testi yapılmadı; görüntülerin varlığı ve dönüşümleri sunucu üzerinde doğrulandı.
+
+Bu kurulum **yerelde oynamak** için hazırlanmıştır. Dış oyuncular için kaynak paketinin
+`http://127.0.0.1:8088/novacosmos.zip` adresi erişilebilir bir sunucu adresiyle değiştirilmeli;
+alan adı/ağ erişimi ayrıca ayarlanmalıdır. Mevcut oyun sürümü 1.20.4'tür.
+EssentialsX 2.21.2 bu Paper sürümü için resmi destek uyarısı verir; testler belirli oyun akışlarını kapsar,
+sunucudaki bütün eski eklentilerin her özelliğini kapsamaz. AuthMe GeoIP veritabanı eksikliği de uyarı verir;
+parolalı kayıt/giriş denetimi çalışır.
+
+Fiziksel anahtar envanteri, Vault ve Cosmos farklı kayıt sistemleridir. Normal kapanma/çıkış akışı
+korunur; işletim sisteminin tam işlem ortasında çökmesi için bu sistemler arasında ortak atomik
+veritabanı işlemi garantisi yoktur. Düzenli kapatma ve yedekleme kullan.

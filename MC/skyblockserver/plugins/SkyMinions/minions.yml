@@ -1,0 +1,49 @@
+minyons:
+  2a83cda8-e26c-3905-ae45-1c3ba3b0441a:
+    minyon0:
+      type: farmer
+      world: SuperiorWorld
+      x: 601
+      y: 100
+      z: -598
+      level: 10
+      inventory:
+        CACTUS: 66
+        WHEAT: 156
+        PUMPKIN: 732
+    minyon1:
+      type: fisher
+      world: SuperiorWorld
+      x: 605
+      y: 100
+      z: -603
+      level: 10
+      inventory:
+        PUFFERFISH: 42
+        INK_SAC: 9
+        KELP: 6
+        SALMON: 75
+        COD: 114
+        TROPICAL_FISH: 27
+    minyon2:
+      type: killer
+      world: SuperiorWorld
+      x: 598
+      y: 100
+      z: -601
+      level: 10
+    minyon3:
+      type: miner
+      world: SuperiorWorld
+      x: 602
+      y: 99
+      z: -603
+      level: 10
+      inventory:
+        REDSTONE: 12
+        RAW_IRON: 9
+        LAPIS_LAZULI: 27
+        RAW_GOLD: 12
+        COAL: 30
+        COBBLESTONE: 240
+        EMERALD: 6

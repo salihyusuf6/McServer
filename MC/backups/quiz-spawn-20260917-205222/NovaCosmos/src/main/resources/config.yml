@@ -1,0 +1,30 @@
+# Paper 1.20.4. Tüm süreler saniye cinsindendir.
+events:
+  enabled: true
+  interval-seconds: 5400
+  duration-seconds: 900
+  reward: 45
+  mining-target: 96
+  combat-target: 20
+  farming-target: 64
+daily:
+  mining-target: 128
+  combat-target: 24
+  farming-target: 96
+  reward: 35
+# Bu dünyalarda oyuncunun kendi adası dışında da savaş görevi sayılır.
+combat-worlds: [dungeon, nova_dungeon]
+# Yerel test adresi. Dışarı açılınca oyuncuların erişebildiği HTTP/HTTPS adresini yaz.
+# Dahili sunucu sadece paket ZIP'ini sunar; ayrı bir servis başlatmak gerekmez.
+resource-pack:
+  enabled: true
+  required: true
+  url: 'http://127.0.0.1:8088/novacosmos.zip'
+  # Dahili sunucuda otomatik hesaplanır. Harici barındırmada doldur.
+  sha1: ''
+  host:
+    enabled: true
+    bind: '127.0.0.1'
+    port: 8088
+visuals:
+  orbit-stars: true

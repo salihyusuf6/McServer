@@ -1,0 +1,366 @@
+[14:52:35 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[14:52:35 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[14:52:35 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[14:52:36 INFO]: Loading localizations...
+[14:52:36 INFO]: Loading plugins...
+[14:52:36 INFO]: Loaded 1 plugins
+[14:52:36 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[14:52:36 INFO]: Done (1.34s)!
+>   [14:53:05 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50526) has connected
+>   [14:53:05 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [14:53:05 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [31;1m[14:53:05 ERROR]: [connected player] NovaNetProbe (/127.0.0.1:50526): disconnected while connecting to skyblock: If you wish to use IP forwarding, please enable it in your BungeeCord config as well!
+[m>   [14:53:05 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50526) has disconnected: [91mUnable to connect to skyblock: If you wish to use IP forwarding, please enable it in your BungeeCord config as well![0m
+> >   [14:53:44 INFO]: Shutting down the proxy...
+>   [14:53:44 INFO]: Closing endpoint /0.0.0.0:25565
+> [14:54:19 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[14:54:19 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[14:54:19 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[14:54:19 INFO]: Loading localizations...
+[14:54:19 INFO]: Loading plugins...
+[14:54:19 INFO]: Loaded 1 plugins
+[14:54:19 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[14:54:19 INFO]: Done (1.14s)!
+>   [14:55:15 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50624) has connected
+>   [14:55:15 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [14:57:50 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50624) has disconnected
+>   [14:57:50 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+>   [14:58:42 INFO]: Shutting down the proxy...
+>   [14:58:42 INFO]: Closing endpoint /0.0.0.0:25565
+> [16:32:12 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[16:32:12 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[16:32:12 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[16:32:13 INFO]: Loading localizations...
+[16:32:13 INFO]: Loading plugins...
+[16:32:13 INFO]: Loaded 1 plugins
+[16:32:13 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[16:32:13 INFO]: Done (0.59s)!
+>   [16:32:40 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50450) has connected
+>   [16:32:40 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [16:32:40 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50450) has disconnected
+>   [16:32:40 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [16:33:21 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50455) has connected
+>   [16:33:21 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [16:33:23 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50455) has disconnected
+>   [16:33:23 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [16:36:08 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50525) has connected
+>   [16:36:08 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [16:36:20 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50525): kicked from server skyblock: Wrong password!
+>   [16:36:20 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+>   [16:36:20 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50525) has disconnected: [91mYou were kicked from skyblock: Wrong password![0m
+>   [16:36:36 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50545) has connected
+>   [16:36:36 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [16:36:51 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50545): kicked from server skyblock: Wrong password!
+>   [16:36:51 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+>   [16:36:51 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50545) has disconnected: [91mYou were kicked from skyblock: Wrong password![0m
+>   [16:36:56 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50554) has connected
+>   [16:36:56 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+> >   [16:37:25 INFO]: Shutting down the proxy...
+>   [16:37:25 INFO]: Closing endpoint /0.0.0.0:25565
+>   [16:37:25 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50554) has disconnected: Proxy shutting down.
+>   [16:37:25 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> [16:37:51 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[16:37:51 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[16:37:51 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[16:37:51 INFO]: Loading localizations...
+[16:37:51 INFO]: Loading plugins...
+[16:37:51 INFO]: Loaded 1 plugins
+[16:37:51 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[16:37:51 INFO]: Done (0.6s)!
+>   [16:38:15 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50600) has connected
+>   [16:38:15 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [16:38:15 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50600) has disconnected
+>   [16:38:15 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [16:38:29 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50608) has connected
+>   [16:38:29 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [16:40:30 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50608) has disconnected
+>   [16:40:30 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+>   [16:45:37 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50668) has connected
+>   [16:45:37 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+> >   [16:51:32 INFO]: Shutting down the proxy...
+>   [16:51:32 INFO]: Closing endpoint /0.0.0.0:25565
+>   [16:51:32 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50668) has disconnected: Proxy shutting down.
+>   [16:51:32 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> [16:51:56 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[16:51:56 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[16:51:56 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[16:51:56 INFO]: Loading localizations...
+[16:51:56 INFO]: Loading plugins...
+[16:51:56 INFO]: Loaded 1 plugins
+[16:51:56 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[16:51:56 INFO]: Done (0.52s)!
+>   [16:51:58 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50758) has connected
+>   [31;1m[16:51:58 ERROR]: [connected player] OmenTonremmm (/127.0.0.1:50758): unable to connect to server skyblock
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed with error(-61): Connection refused: /127.0.0.1:25566
+Caused by: java.net.ConnectException: finishConnect(..) failed with error(-61): Connection refused
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:361) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe.doFinishConnect(AbstractKQueueChannel.java:689) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe.finishConnect(AbstractKQueueChannel.java:669) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe.shutdownInput(AbstractKQueueChannel.java:478) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe.readEOF(AbstractKQueueChannel.java:520) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe.handle(AbstractKQueueChannel.java:418) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.KQueueIoHandler$DefaultKqueueIoRegistration.handle(KQueueIoHandler.java:474) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.KQueueIoHandler.processReady(KQueueIoHandler.java:216) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.kqueue.KQueueIoHandler.run(KQueueIoHandler.java:277) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1204) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[proxy.jar:4.1.0-SNAPSHOT (git-9eb338bd-b8)]
+	at java.base/java.lang.Thread.run(Thread.java:1516) [?:?]
+[m>   [16:51:58 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50758) has disconnected: [91mUnable to connect you to skyblock. Please try again later.[0m
+>   [16:52:11 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50770) has connected
+>   [16:52:11 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [16:52:42 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50786) has connected
+>   [16:52:42 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [16:52:42 INFO]: [connected player] NovaNetProbe (/127.0.0.1:50786) has disconnected
+>   [16:52:42 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [17:04:07 INFO]: [connected player] OmenTonremmm (/127.0.0.1:50770) has disconnected
+>   [17:04:07 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> >   [17:04:50 INFO]: Shutting down the proxy...
+>   [17:04:50 INFO]: Closing endpoint /0.0.0.0:25565
+> [20:58:57 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[20:58:57 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[20:58:57 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[20:58:57 INFO]: Loading localizations...
+[20:58:57 INFO]: Loading plugins...
+[20:58:57 INFO]: Loaded 1 plugins
+[20:58:57 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[20:58:57 INFO]: Done (0.56s)!
+>   [20:59:49 INFO]: [connected player] NovaNetProbe (/127.0.0.1:51101) has connected
+>   [20:59:49 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [20:59:49 INFO]: [connected player] NovaNetProbe (/127.0.0.1:51101) has disconnected
+>   [20:59:49 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [21:04:11 INFO]: Shutting down the proxy...
+>   [21:04:11 INFO]: Closing endpoint /0.0.0.0:25565
+> [12:13:39 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[12:13:39 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[12:13:39 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[12:13:39 INFO]: Loading localizations...
+[12:13:39 INFO]: Loading plugins...
+[12:13:39 INFO]: Loaded 1 plugins
+[12:13:39 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[12:13:39 INFO]: Done (0.6s)!
+>   [12:14:15 INFO]: [connected player] NovaNetProbe (/127.0.0.1:51951) has connected
+>   [12:14:15 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [12:14:16 INFO]: [connected player] NovaNetProbe (/127.0.0.1:51951) has disconnected
+>   [12:14:16 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [12:19:13 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52099) has connected
+>   [12:19:13 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+> >   [12:22:50 INFO]: Shutting down the proxy...
+>   [12:22:50 INFO]: Closing endpoint /0.0.0.0:25565
+>   [12:22:50 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52099) has disconnected: Proxy shutting down.
+>   [12:22:50 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> [12:23:11 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[12:23:11 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[12:23:11 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[12:23:11 INFO]: Loading localizations...
+[12:23:11 INFO]: Loading plugins...
+[12:23:11 INFO]: Loaded 1 plugins
+[12:23:11 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[12:23:11 INFO]: Done (0.56s)!
+>   [12:23:51 INFO]: [connected player] NovaNetProbe (/127.0.0.1:52199) has connected
+>   [12:23:51 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [12:23:52 INFO]: [connected player] NovaNetProbe (/127.0.0.1:52199) has disconnected
+>   [12:23:52 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [12:24:05 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52207) has connected
+>   [12:24:05 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+> >   [12:28:08 INFO]: Shutting down the proxy...
+>   [12:28:08 INFO]: Closing endpoint /0.0.0.0:25565
+>   [12:28:08 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52207) has disconnected: Proxy shutting down.
+>   [12:28:08 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> [12:28:33 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[12:28:33 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[12:28:34 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[12:28:34 INFO]: Loading localizations...
+[12:28:34 INFO]: Loading plugins...
+[12:28:34 INFO]: Loaded 1 plugins
+[12:28:34 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[12:28:34 INFO]: Done (0.5s)!
+>   [12:29:14 INFO]: [connected player] NovaNetProbe (/127.0.0.1:52301) has connected
+>   [12:29:14 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [12:29:14 INFO]: [connected player] NovaNetProbe (/127.0.0.1:52301) has disconnected
+>   [12:29:14 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [12:29:21 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52305) has connected
+>   [12:29:21 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [12:29:24 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52305): kicked from server skyblock: Wrong password!
+>   [12:29:24 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+>   [12:29:24 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52305) has disconnected: [91mYou were kicked from skyblock: Wrong password![0m
+>   [12:29:31 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52315) has connected
+>   [12:29:31 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+> >   [12:31:45 INFO]: Shutting down the proxy...
+>   [12:31:45 INFO]: Closing endpoint /0.0.0.0:25565
+>   [12:31:45 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52315) has disconnected: Proxy shutting down.
+>   [12:31:45 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> [12:32:10 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[12:32:10 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[33;1m[12:32:11 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[m[12:32:11 INFO]: Loading localizations...
+[12:32:11 INFO]: Loading plugins...
+[12:32:11 INFO]: Loaded 1 plugins
+[12:32:11 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[12:32:11 INFO]: Done (0.9s)!
+>   [12:32:41 INFO]: [connected player] NovaNetProbe (/127.0.0.1:52385) has connected
+>   [12:32:41 INFO]: [server connection] NovaNetProbe -> skyblock has connected
+>   [12:32:41 INFO]: [connected player] NovaNetProbe (/127.0.0.1:52385) has disconnected
+>   [12:32:41 INFO]: [server connection] NovaNetProbe -> skyblock has disconnected
+>   [12:32:49 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52390) has connected
+>   [12:32:49 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+>   [12:44:00 INFO]: Shutting down the proxy...
+>   [12:44:00 INFO]: Closing endpoint /0.0.0.0:25565
+>   [12:44:00 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52390) has disconnected: Proxy shutting down.
+>   [12:44:00 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+> 2026-09-19T11:17:39.234220Z main WARN Advanced terminal features are not available in this environment
+[14:17:39 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[14:17:39 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[14:17:39 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[14:17:39 INFO]: Loading localizations...
+[14:17:39 INFO]: Loading plugins...
+[14:17:39 INFO]: Loaded 1 plugins
+[14:17:39 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[14:17:39 INFO]: Done (0.59s)!
+[14:17:51 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52901) has connected
+[14:17:51 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+[14:30:21 INFO]: Shutting down the proxy...
+[14:30:21 INFO]: Closing endpoint /0.0.0.0:25565
+[14:30:21 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52901) has disconnected: Proxy shutting down.
+[14:30:21 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+2026-09-19T11:30:57.064084Z main WARN Advanced terminal features are not available in this environment
+[14:30:57 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[14:30:57 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[14:30:57 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[14:30:57 INFO]: Loading localizations...
+[14:30:57 INFO]: Loading plugins...
+[14:30:57 INFO]: Loaded 1 plugins
+[14:30:57 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[14:30:57 INFO]: Done (0.54s)!
+[14:31:40 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52987) has connected
+[14:31:40 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+[14:44:02 INFO]: [connected player] OmenTonremmm (/127.0.0.1:52987) has disconnected
+[14:44:02 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+[14:55:08 INFO]: Shutting down the proxy...
+[14:55:08 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-19T11:55:39.431911Z main WARN Advanced terminal features are not available in this environment
+[14:55:39 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[14:55:39 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[14:55:39 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[14:55:39 INFO]: Loading localizations...
+[14:55:39 INFO]: Loading plugins...
+[14:55:39 INFO]: Loaded 1 plugins
+[14:55:39 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[14:55:39 INFO]: Done (0.49s)!
+[15:00:41 INFO]: Shutting down the proxy...
+[15:00:41 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-19T12:01:02.948278Z main WARN Advanced terminal features are not available in this environment
+[15:01:03 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[15:01:03 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[15:01:03 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[15:01:03 INFO]: Loading localizations...
+[15:01:03 INFO]: Loading plugins...
+[15:01:03 INFO]: Loaded 1 plugins
+[15:01:03 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[15:01:03 INFO]: Done (0.55s)!
+[15:05:23 INFO]: Shutting down the proxy...
+[15:05:23 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-19T12:05:45.374959Z main WARN Advanced terminal features are not available in this environment
+[15:05:45 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[15:05:45 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[15:05:45 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[15:05:45 INFO]: Loading localizations...
+[15:05:45 INFO]: Loading plugins...
+[15:05:45 INFO]: Loaded 1 plugins
+[15:05:45 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[15:05:45 INFO]: Done (0.52s)!
+[15:30:37 INFO]: Shutting down the proxy...
+[15:30:37 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-19T19:10:26.566170Z main WARN Advanced terminal features are not available in this environment
+[22:10:26 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[22:10:27 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[22:10:27 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[22:10:27 INFO]: Loading localizations...
+[22:10:27 INFO]: Loading plugins...
+[22:10:27 INFO]: Loaded 1 plugins
+[22:10:27 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[22:10:27 INFO]: Done (0.57s)!
+[22:10:34 INFO]: [connected player] OmenTonremmm (/127.0.0.1:56014) has connected
+[22:10:34 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+[22:10:39 INFO]: [connected player] OmenTonremmm (/127.0.0.1:56014) has disconnected
+[22:10:39 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+[22:10:49 INFO]: [connected player] OmenTonremmm (/127.0.0.1:56029) has connected
+[22:10:49 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+[22:19:13 INFO]: [connected player] OmenTonremmm (/127.0.0.1:56029) has disconnected
+[22:19:13 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+[22:19:46 INFO]: Shutting down the proxy...
+[22:19:46 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-19T19:37:23.922310Z main WARN Advanced terminal features are not available in this environment
+[22:37:24 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[22:37:24 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[22:37:24 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[22:37:24 INFO]: Loading localizations...
+[22:37:24 INFO]: Loading plugins...
+[22:37:24 INFO]: Loaded 1 plugins
+[22:37:24 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[22:37:24 INFO]: Done (0.48s)!
+[22:52:16 INFO]: Shutting down the proxy...
+[22:52:16 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-19T19:52:38.478540Z main WARN Advanced terminal features are not available in this environment
+[22:52:38 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[22:52:38 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[22:52:38 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[22:52:38 INFO]: Loading localizations...
+[22:52:38 INFO]: Loading plugins...
+[22:52:38 INFO]: Loaded 1 plugins
+[22:52:39 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[22:52:39 INFO]: Done (0.49s)!
+[22:56:29 INFO]: Shutting down the proxy...
+[22:56:29 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-20T07:01:45.574585Z main WARN Advanced terminal features are not available in this environment
+[10:01:46 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[10:01:47 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[10:01:47 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[10:01:47 INFO]: Loading localizations...
+[10:01:47 INFO]: Loading plugins...
+[10:01:47 INFO]: Loaded 1 plugins
+[10:01:47 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[10:01:47 INFO]: Done (1.76s)!
+[10:03:05 INFO]: [connected player] OmenTonremmm (/127.0.0.1:57127) has connected
+[10:03:05 INFO]: [server connection] OmenTonremmm -> skyblock has connected
+[10:33:46 INFO]: [connected player] OmenTonremmm (/127.0.0.1:57127) has disconnected
+[10:33:46 INFO]: [server connection] OmenTonremmm -> skyblock has disconnected
+[10:36:14 INFO]: Shutting down the proxy...
+[10:36:14 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-20T07:46:24.165543Z main WARN Advanced terminal features are not available in this environment
+[10:46:24 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[10:46:25 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[10:46:25 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[10:46:25 INFO]: Loading localizations...
+[10:46:25 INFO]: Loading plugins...
+[10:46:25 INFO]: Loaded 1 plugins
+[10:46:25 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[10:46:25 INFO]: Done (0.91s)!
+[10:49:32 INFO]: Shutting down the proxy...
+[10:49:32 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-20T07:49:54.531813Z main WARN Advanced terminal features are not available in this environment
+[10:49:54 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[10:49:55 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[10:49:55 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[10:49:55 INFO]: Loading localizations...
+[10:49:55 INFO]: Loading plugins...
+[10:49:55 INFO]: Loaded 1 plugins
+[10:49:55 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[10:49:55 INFO]: Done (0.71s)!
+[10:51:23 INFO]: Shutting down the proxy...
+[10:51:23 INFO]: Closing endpoint /0.0.0.0:25565
+2026-09-20T07:51:46.190819Z main WARN Advanced terminal features are not available in this environment
+[10:51:46 INFO]: Booting up Velocity 4.1.0-SNAPSHOT (git-9eb338bd-b8)...
+[10:51:46 INFO]: Connections will use kqueue channels, libdeflate (macOS ARM64 / Apple Silicon) compression, native (macOS ARM64 / Apple Silicon) ciphers
+[10:51:46 WARN]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[10:51:46 INFO]: Loading localizations...
+[10:51:46 INFO]: Loading plugins...
+[10:51:46 INFO]: Loaded 1 plugins
+[10:51:46 INFO]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[10:51:46 INFO]: Done (0.69s)!
+[21:34:03 INFO]: Shutting down the proxy...
+[21:34:03 INFO]: Closing endpoint /0.0.0.0:25565
